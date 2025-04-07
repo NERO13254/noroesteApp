@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUEVO PRODUCTO</title>
+    <link rel="stylesheet" href="../styles/addNewProductListProducts.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+</head>
+<body>
+    <div id="backElelemet"></div>
+    <div class="titleContent">
+        <h2>Nuevo producto</h2>
+    </div>
+
+    <div class="formContent">
+        <label for="insideId">CODIGO INTERNO</label>
+        <input type="text" name="" class="infoContainer" id="insideId" placeholder="ER32">
+        <label for="nameProd">NOMBRE</label>
+        <input type="text" name="" class="infoContainer" id="nameProd" placeholder="CILINDRO GNC">
+        <label for="brand">MARCA</label>
+        <input type="text" name="" class="infoContainer" id="brand" placeholder="IMPROCIL ">
+        <label for="existences">EXISTENCIAS</label>
+        <input type="text" name="" class="infoContainer" id="existences" placeholder="5 ">
+        <label for="serial">SERIE</label>
+        <input type="text" name="" class="infoContainer" id="serial" placeholder="SI/NO">
+        <label for="imgInput">IMAGEN</label>
+        <input type="text" name="" class="infoContainer" id="imgInput" placeholder="nombreDeLaFoto.png">
+        <label for="costValue">PRECIO DE COSTO</label>
+        <input type="number" name="" class="infoContainer" id="costValue" placeholder="10.000">
+        <label for="finalValue">PRECIO DE VENTA</label>
+        <input type="number" name="" class="infoContainer" id="finalValue" placeholder="15.000">
+    </div>
+    <div class="calculateValue" id="calculateValue">
+        <strong> valor de venta estimado  : $ <span id="containerValGenerate"></span> </strong>
+    </div>
+
+    <div id="alertContainer">
+
+    </div>
+
+    <div class="buttonController">
+        <button id="createProduct">CREAR</button>
+    </div>
+    <script src="../scripts/addNewProductListProducts.js"></script>
+</body>
+</html>

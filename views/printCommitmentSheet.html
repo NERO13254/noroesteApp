@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOJA DE RUTA</title>
+    <link rel="stylesheet" href="../styles/printCommitmentShet.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+</head>
+<body>  
+    <div id="reportStatus"></div>
+    <div class="printContent">
+        <button id="printButton">Imprimir</button>
+    </div>
+
+    <!-- contenedor de las fechas (habilitacion vencimiento) numeros de oblea (anterior ,  nueva) y codigos (pec , taller) -->
+    <div class="headerContent">
+        <div class="leftContentHeader1">
+
+        </div>
+        <!-- el header se divide en 2 -->
+        <div class="rigthContentHeader1">
+            <!-- fechas de habilitacion y renovacion -->
+            <div class="dateContent">
+                <div class="dateInfoContent">
+                    <label for="dateNow">Habilitación</label>
+                    <input type="text" id="chekeddate" class="dataInput">
+                </div>
+
+                <div class="dateInfoContent">
+                    <label for="finishDate">Vencimiento</label>
+                    <input type="text" name="finishDate" id="finishDate">
+                </div>
+            </div>
+
+            <!-- inputs de numeros de obleas -->
+            <div class="obleaContent">
+                <div class="dateInfoContent" name='txtUser'> 
+                    <label for="wafer">Anterior</label>
+                    <input type="text" name="oldOblea" id="wafer" class="dataInput">
+                </div>
+                <!-- inputs que contienen la oblea anterior y la nueva -->
+                <div class="dateInfoContent" name='txtUser'>
+                    <label for="newWafer">Nueva</label>
+                    <input type="text" name="newOblea" id="newOblea" class="waferData">
+                </div>
+            </div>
+            <!-- inputs de Cod.Pec y Cod. taller -->
+            <div class="dowInputs">
+                <!-- codigo pec -->
+                <div class="inputDownContent">
+                    <input type="text" id="pec" class="dataInput" value="3101">
+                    <label for="pec">Codigo PEC</label>
+                </div>
+                    <!-- codigo taller -->
+                <div class="inputDownContent">
+                    <input type="text" id="workshopcode" class="dataInput">
+                    <label for="workshopcode">Codigo Taller</label>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- contenedor de datos del vehiculo y tipo de operacion -->
+    <div class="row1">
+        <div class="carData">
+            <!-- marca modelo y año -->
+            <div class="contentDataCar">
+                <!-- marca -->
+                <div class="infoContent" name='txtUser'>
+                    <label for="brandCar">Marca</label>
+                    <input type="text" id="brandCar" class="waferData" name="brandCar">
+                    <div id="contentSearchSelectedBrands">
+                        <div id="inputContainerSearchContentBrand"></div>
+                        <div id="resultsOfTheSearchBrand"></div>
+                    </div>
+                </div>
+                <!-- modelo -->
+                <div class="infoContent" name='txtUser'>
+                    <label for="modelCar">Modelo</label>
+                    <input type="text" id="modelCar" name="modelCar" class="waferData">
+                    <div id="contentSearchSelected">
+                        <div id="inputContainerSearchContentModel"></div>
+                        <div id="resultsOfTheSearchModel"></div>
+                        <button id="addNewCarToList">Añadir Modelo</button>
+                    </div>
+                </div>
+                <div class="infoContent" name="txtUser">
+                    <label for="yearCar">Año</label>
+                    <input type="text" id="yearCar" name="yearCar" class="waferData">
+                </div>
+            </div>
+            <div class="contentDataCarCheked">
+                <!-- dominio -->
+                <div class="infoContent">
+                    <label for="domain">Dominio</label>
+                    <input type="text" id="domain" name="domain" class="waferData">
+                </div>
+                <!-- inyeccion -->
+                <div class="inyectionCase">
+                    <div class="selectsOptions">
+                        <!-- si -->
+                        <div class="optionCheked">
+                            <label for="yesInyecc">Si</label>
+                            <input type="checkbox"  checked name="inyeccion_1" id="inyeccion_1" class="waferData">
+                        </div>
+                        <!-- no -->
+                        <div class="optionCheked">
+                            <label for="noInyecc">No</label>
+                            <input type="checkbox" name="inyeccion_0" id="inyeccion_0" class="waferData">
+                        </div>
+                    </div>
+                    <strong class="infoCheked">Inyección</strong>
+                </div>
+                <!-- tipo de vehiculo -->
+                <div class="typeVehicle">
+                    <strong class="infoCheked">Tipo de vehiculo</strong>
+                    <!-- taxi -->
+                    <div class="optionsSectionContent">
+                        <div class="chekSection">
+                            <input type="checkbox" id="typeVehicle_taxi" class="waferData">
+                            <strong class="infoCheked">Taxi</strong>
+                        </div>
+                        <!-- pickup -->
+                        <div class="chekSection">
+                            <input type="checkbox" id="typeVehicle_PickUp" class="waferData">
+                            <strong class="infoCheked">Pick-Up</strong>
+                        </div>
+                        <!-- part -->
+                        <div class="chekSection">
+                            <input type="checkbox" checked id="typeVehicle_part" class="waferData">
+                            <strong class="infoCheked">Part</strong>
+                        </div>
+                        <!-- bus -->
+                        <div class="chekSection">
+                            <input type="checkbox" id="typeVehicle_bus" class="waferData">
+                            <strong class="infoCheked">Bus</strong>
+                        </div>
+                        <!-- oficial -->
+                        <div class="chekSection">
+                            <input type="checkbox" id="typeVehicle_oficial" class="waferData">
+                            <strong class="infoCheked">Oficial</strong>
+                        </div>
+                        <!-- otros -->
+                        <div class="chekSection">
+                            <input type="checkbox" id="typeVehicle_otros" class="waferData">
+                            <strong class="infoCheked">Otros</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contenedores de datos del vehiculo y tipo de operacion -->
+        <div class="operationType">
+            <div class="contentOption">
+                <!-- baja -->
+                <div class="operationOptionContent">
+                    <strong>BAJA B</strong>
+                    <input type="checkbox" id="typeOperationGeneral_B" class="waferData">
+                </div>
+            </div>
+            <div class="contentOption">
+                <!-- conversion -->
+                <div class="operationOptionContent">
+                    <strong>CONVERSION C</strong>
+                    <input type="checkbox" id="typeOperationGeneral_C" class="waferData">
+                </div>
+                <!-- Modificacion -->
+                <div class="operationOptionContent">
+                    <strong>MODIFICACIÓN M</strong>
+                    <input type="checkbox" id="typeOperationGeneral_M" class="waferData">
+                </div>
+                <!-- revision anual -->
+                <div class="operationOptionContent">
+                    <strong>REVISION ANUAL R</strong>
+                    <input type="checkbox" id="typeOperationGeneral_R" class="waferData">
+                </div>
+                <!-- desmontaje -->
+                <div class="operationOptionContent">
+                    <strong>DESMONTAJE D</strong>
+                    <input type="checkbox" id="typeOperationGeneral_D" class="waferData">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contenedor de los datos del usuario -->
+    <div class="row2">
+        <!-- nombre , calle , n° , piso , cp -->
+        <div class="row2Top">
+            <!-- nombre y apellido -->
+            <div class="inputContentUser" name="txtUser">
+                <strong class="dataClient">Nombre y Apellido</strong>
+                <input type="text" id="nameandsurname" name="names" class="dataInput">
+            </div>
+            <!-- calle -->
+            <div class="inputContentUser" name="txtUser">
+                <strong class="dataClient">Dirección</strong>
+                <input type="text" id="direccion" name="direccion" class="dataInput">
+            </div>
+            <!-- CP -->
+            <div class="inputContentUser" name="txtUser" >
+                <strong class="dataClient">CPA</strong>
+                <input type="text" id="cp"name="cp" class="dataInput">
+            </div>
+        </div>
+        <!-- localidad provincia telefono  y dni -->
+        <div class="row2Bottom">
+            <!-- localidad -->
+            <div class="inputContentUser" name="txtUser" >
+                <strong class="dataClient">Localidad</strong>
+                <input type="text" id="country" name="location" class="dataInput">
+            </div>
+            <!-- Provincia -->
+            <div class="inputContentUser" name="txtUser">
+                <strong class="dataClient">Provincia</strong>
+                <input type="text" id="provincia" name="country" class="dataInput">
+            </div>
+            <!-- telefono -->
+            <div class="inputContentUser" name="txtUser">
+                <strong class="dataClient">Telefono</strong>
+                <input type="text" id="tel" value="1" class="waferData">
+            </div>
+            <!-- Tipo de Dni -->
+            <div class="inputContentUser" name="txtUser">
+                <strong class="dataClient">Tipo(dni)</strong>
+                <input type="text" id="typeDni" class="dataInput" value="DNI" name="typeDni">
+            </div>
+            <!-- DNI -->
+            <div class="inputContentUser" name="txtUser">
+                <strong class="dataClient">N°Documento</strong>
+                <input type="text" id="dniUser" class="dataInput" name="dni">
+            </div>
+        </div>
+    </div>
+    <!-- datos del regulador , manometro y accesorios -->
+    <div class="row3">
+        <div class="regulatorData">
+            <div class="guideRegulator">
+                <strong>REGULADOR</strong>
+                <strong>Codigo</strong>
+                <strong>N° Serie</strong>
+            </div>
+            <!-- actual montaje desmontaje baja -->
+            <div class="inputsContent">
+                <!-- actual -->
+                <div class="regulatorInputContent">
+                    <strong class="dataClient">Actual</strong>
+                    <input type="text" name="code_A" id="reguatorCode" class="waferData">
+                    <input type="text" name="serial_A" id="serialNumberRegulator" class="waferData">
+                </div>
+                <!-- montaje -->
+                <div class="regulatorInputContent">
+                    <strong class="dataClient">Montaje</strong>
+                    <input type="text" name="code_M" id="montaje" class="waferData">
+                    <input type="text" name="serial_M" id="montaje1" class="waferData">
+                </div>
+                <!-- desmontaje -->
+                <div class="regulatorInputContent">
+                    <strong class="dataClient">Desmontaje</strong>
+                    <input type="text" name="code_D" id="desmontaje"  class="waferData">
+                    <input type="text" name="serial_D" id="desmontaje1"  class="waferData">
+                </div>
+                <!-- baja -->
+                <div class="regulatorInputContent">
+                    <strong class="dataClient">Baja</strong>
+                    <input type="text" name="code_B" id="baja"  class="waferData">
+                    <input type="text" name="serial_B" id="baja1" class="waferData">
+                </div>
+                <!-- nuevo o usado -->
+                <div class="newOrOld">
+                    <label for="typeOperationRegulator">Tipo de <br> operación</label>
+                    <input type="text" id="typeOperationRegulator" value="S"> 
+                </div>
+            </div>
+            <!-- codigo y n°serie del manometro -->
+            <div class="manometroData">
+                <strong class="strongTtile">Manometro</strong>
+                <!-- codigo -->
+                <div class="inputsManometro">
+                    <strong class="dataClient">Codigo</strong>
+                    <input type="text" id="codeManometro" class="waferData">
+                </div>
+                <!-- n ° serie  -->
+                <div class="inputsManometro">
+                    <strong class="dataClient">N ° Serie</strong>
+                    <input type="text" id="serialManometro" class="waferData">
+                </div>
+            </div>
+
+            <!--  accesorios p tuberia-->
+            <div class="manometroData">
+                <strong class="strongTtile">Accesorio p/tubería</strong>
+                <!-- codigo -->
+                <div class="inputsManometro">
+                    <strong class="dataClient">Codigo</strong>
+                    <input type="text" id="tuberiaCode" class="waferData">
+                </div>
+                <!-- serie -->
+                <div class="inputsManometro">
+                    <strong class="dataClient">N° Serie</strong>
+                    <input type="text" id="tuberiaSerie" class="waferData">
+                </div>
+            </div>
+            <!-- tuberia alta presion -->
+            <div class="manometroData">
+                <strong class="strongTtile">Tubería alta presión</strong>
+                <!-- codigo -->
+                <div class="inputsManometro">
+                    <strong class="dataClient">Codigo</strong>
+                    <input type="text" id="altaTuberiaCode" class="waferData">
+                </div>
+                <!-- serie -->
+                <div class="inputsManometro">
+                    <strong class="dataClient">N° Serie</strong>
+                    <input type="text" id="altaTuberiaSerial" class="waferData">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row4">
+        <!-- datos de los cilindros -->
+        <div class="cilindersData">
+            <div class="titleSection">
+                <strong>CILINDROS</strong>
+                <strong>VALVULA</strong>
+            </div>
+            
+            <div class="cilInfoContent">
+                <div class="guideInfo">
+                    <strong class="dataClient">Codigo</strong>
+                    <strong class="dataClient">N°Serie</strong>
+                    <strong class="dataClient">VOL.</strong>
+
+                    <div class="chekedCil">
+                        <strong class="absoluteInput">Fabricado</strong>
+                        <strong class="dataClient">Mes</strong>
+                        <strong class="dataClient">Año</strong>
+                    </div>
+
+                    <div class="chekedCil">
+                        <strong class="absoluteInput">Revisado</strong>
+                        <strong class="dataClient">Mes</strong>
+                        <strong class="dataClient">Año</strong>
+                    </div>
+                    <strong class="dataClient">CRPC</strong>
+                    <strong class="dataClient">M/S D/B</strong>
+                    <!-- valuvla -->
+                    <strong class="dataClient">Código</strong>
+                    <strong class="dataClient">N° Serie</strong>
+                    <strong class="dataClient">M/S/D/B</strong>
+                </div>
+                <!-- codigo -->
+                <div class="cilInfo">
+                    <div class="inputCilDataContent">
+                        <input type="text" name="cil0"  id="omologation0" class="dataInput">
+                        <input type="text" name="cil0" id="serialnumber0" class="dataInput">
+
+
+                        <input type="text" name="cil0" id="capacity0" class="waferData">
+
+                        <input type="text" name="cil0" id="dateFabMonth0" class="dataInput">
+                        <input type="text" name="cil0" id="dateFabYear0" class="dataInput">
+                        <input type="text" name="cil0" id="chekeddateMonth0" class="dataInput">
+                        <input type="text" name="cil0" id="chekeddateYear0" class="dataInput">
+                        <input type="text" name="cil0" id="crpc0" class="dataInput">
+                        <input type="text" name="cil0" id="typeOperationCil0" class="waferData">
+                        <div class="valveContent">
+                            <input type="text"  id="codeValve0" class="waferData">
+                            <input type="text"  id="serialValve0" class="waferData">
+                            <input type="text"  id="typeOperationValve0" class="waferData">
+                        </div>
+                    </div>
+                </div>
+                <div class="cilInfo">
+                    <div class="inputCilDataContent">
+                        <input type="text" name="cil1" id="omologation1" class="dataInput">
+                        <input type="text" name="cil1" id="serialnumber1" class="dataInput">
+
+
+                        <input type="text" name="cil1" id="capacity0" class="waferData">
+
+                        <input type="text" name="cil1" id="dateFabMonth1" class="dataInput">
+                        <input type="text" name="cil1" id="dateFabYear1" class="dataInput">
+                        <input type="text" name="cil1" id="chekeddateMonth1" class="dataInput">
+                        <input type="text" name="cil1" id="chekeddateYear1" class="dataInput">
+                        <input type="text" name="cil1" id="crpc1" class="dataInput">
+                        <input type="text" name="cil1" id="typeOperationCil1" class="waferData">
+                        <div class="valveContent">
+                            <input type="text"  id="codeValve1" class="waferData">
+                            <input type="text"  id="serialValve1" class="waferData">
+                            <input type="text"  id="typeOperationValve1" class="waferData">
+                        </div>
+                    </div>
+                </div>
+                <div class="cilInfo">
+                    <div class="inputCilDataContent">
+                        <input type="text" name="cil2" id="omologation2" class="dataInput">
+                        <input type="text" name="cil2" id="serialnumber2" class="dataInput">
+                        <input type="text" name="cil2" id="capacity0" class="waferData">
+                        <input type="text" name="cil2" id="dateFabMonth2" class="dataInput">
+                        <input type="text" name="cil2" id="dateFabYear2" class="dataInput">
+                        <input type="text" name="cil2" id="chekeddateMonth2" class="dataInput">
+                        <input type="text" name="cil2" id="chekeddateYear2" class="dataInput">
+                        <input type="text" name="cil2" id="crpc2" class="dataInput">
+                        <input type="text" name="cil2" id="typeOperationCil2" class="waferData">
+                        
+                        <div class="valveContent">
+                            <input type="text"  id="codeValve2" class="waferData">
+                            <input type="text"  id="serialValve2" class="waferData">
+                            <input type="text"  id="typeOperationValve2" class="waferData">
+                        </div>
+                    </div>
+                </div>
+                <div class="cilInfo">
+                    <div class="inputCilDataContent">
+                        <input type="text" name="cil3" id="omologation3" class="dataInput">
+                        <input type="text" name="cil3" id="serialnumber3" class="dataInput">
+                        
+                        <input type="text" name="cil3" id="capacity0" class="waferData">
+
+
+                        <input type="text" name="cil3" id="dateFabMonth3" class="dataInput">
+                        <input type="text" name="cil3" id="dateFabYear3" class="dataInput">
+                        <input type="text" name="cil3" id="chekeddateMonth3" class="dataInput">
+                        <input type="text" name="cil3" id="chekeddateYear3" class="dataInput">
+                        <input type="text" name="cil3" id="crpc3" class="dataInput">
+                        <input type="text" name="cil3" id="typeOperationCil3" class="waferData">
+                        
+                        <div class="valveContent">
+                            <input type="text"  id="codeValve3" class="waferData">
+                            <input type="text"  id="serialValve3" class="waferData">
+                            <input type="text"  id="typeOperationValve3" class="waferData">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row5">
+        <!-- dispositivo de sujeccion -->
+        <div class="sectionContent">
+            <strong class="absoluteInput">Disp.Sujección cilindro</strong>
+            
+            <div class="inputsContentSecction">
+                <strong>Código</strong>
+                <input type="text" id="sujeccionCode" name="sujeccionCode">
+            </div>
+            <div class="inputsContentSecction">
+                <strong>N° Serie</strong>
+                <input type="text" name="sujeccionSerial" id="sujeccionSerial">
+            </div>
+        </div>
+        <!-- electrovalvula nafta -->
+        <div class="sectionContent">
+            <strong class="absoluteInput">Electrovalvula Nafta</strong>
+            <div class="inputsContentSecction">
+                <strong>Código</strong>
+                <input type="text" name="ElectrovalvulaCode" id="ElectrovalvulaCode">
+            </div>
+            <div class="inputsContentSecction">
+                <strong>N° Serie</strong>
+                <input type="text" name="ElectrovalvulaSerial" id="ElectrovalvulaSerial">
+            </div>
+        </div>
+        <!-- electrovalvula gnc -->
+        <div class="sectionContent">
+            <strong class="absoluteInput">Electrovalvula GNC</strong>
+            <div class="inputsContentSecction">
+                <strong>Código</strong>
+                <input type="text" name="electroNaftaCode" id="electroNaftaCode">
+            </div>
+            <div class="inputsContentSecction">
+                <strong>N° Serie</strong>
+                <input type="text" name="electroNaftaSerial" id="electroNaftaSerial">
+            </div>
+        </div>
+        <!-- electrovalvula gnc -->
+        <div class="sectionContent">
+            <strong class="absoluteInput">Electrovalvula GNC</strong>
+            <div class="inputsContentSecction">
+                <strong>Código</strong>
+                <input type="text" name="electroValvulaGncCode" id="electroValvulaGncCode">
+            </div>
+            <div class="inputsContentSecction">
+                <strong>N° Serie</strong>
+                <input type="text" name="electroValvulaGncSerial" id="electroValvulaGncSerial">
+            </div>
+        </div>
+        <!--  mezclador -->
+        <div class="sectionContent">
+            <strong class="absoluteInput">Dosif/Mezclador</strong>
+            <div class="inputsContentSecction">
+                <strong>Código</strong>
+                <input type="text" name="mezcladorCode" id="mezcladorCode">
+            </div>
+            <div class="inputsContentSecction">
+                <strong>N° Serie</strong>
+                <input type="text" name="mezcladorSerial" id="mezcladorSerial">
+            </div>
+        </div>
+        <!-- venteo -->
+        <div class="sectionContent">
+            <strong class="absoluteInput">Sistema de venteo</strong>
+            <div class="inputsContentSecction">
+                <strong>Código</strong>
+                <input type="text" name="venteoCode" id="venteoCode">
+            </div>
+            <div class="inputsContentSecction">
+                <strong>N° Serie</strong>
+                <input type="text" name="venteoSerial" id="venteoSerial">
+            </div>
+        </div>
+        <!-- llave conmutadora -->
+        <div class="sectionContent">
+            <strong class="absoluteInput">Llave Conmutadora</strong>
+            <div class="inputsContentSecction">
+                <strong>Código</strong>
+                <input type="text" name="llaveConmutadoraCode" id="llaveConmutadoraCode">
+            </div>
+            <div class="inputsContentSecction">
+                <strong>N° Serie</strong>
+                <input type="text" name="llaveConmutadoraSerial" id="llaveConmutadoraSerial">
+            </div>
+        </div>
+    </div>
+
+    <div class="row6">
+        <strong>Observaciones:</strong>
+        <textarea name="obs" id="obs"></textarea>
+    </div>
+
+    <script src="../scripts/printCommitmentSheet.js"></script>
+</body>
+</html>

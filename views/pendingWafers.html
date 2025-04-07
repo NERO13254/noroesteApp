@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obleas pendientes</title>
+    <link rel="stylesheet" href="../styles/pendingWafers.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+    <link rel="stylesheet" href="../styles/succesAlert.css">
+</head>
+<body>
+    <!-- boton para volver atras -->
+    <div id="backElement"></div>
+    <!-- se almacena la alerta de exito -->
+    <div id="succesAlertContent"></div>
+    <div class="listWaferController">
+        <!-- buscador de obleas por fecha -->
+        <div class="dateContent">
+            <div class="dateContainer">
+                <label for="Día">Día</label>
+                <input type="text" name="Día" id="dateInput" maxlength="2" minlength="1">
+            </div>
+            <div class="dateContainer">
+                <label for="Mes">Mes</label>
+                <input type="text" name="Mes"id="monthInput"maxlength="2" minlength="2">
+            </div>
+            <div class="dateContainer">
+                <label for="Año">Año</label>
+                <input type="text" name="Año" id="yearInput" maxlength="4" minlength="4">
+            </div>
+            <button id="startSearch"></button>
+        </div>
+        <div id="errorDateContent"></div>
+        <!-- controlador para añadir una oblea -->
+        <div class="addWaferController">
+            <input type="text" name="tdm" placeholder="TDM . . . " value="JARBO S.A">
+            <input type="text" name="domain" placeholder="Patente . . . ">
+            <input type="text" name="car" placeholder="Vehiculo . . .">
+            <input type="text" name="workshop" placeholder="Taller . . .">
+            <input type="text" name="value" placeholder="Pagó. . .">
+            <button id="addRowToListWafer">+</button>
+        </div>
+        <div id="alertContainer"></div>
+    </div>
+    <!-- lista de obleas -->
+     <div class="listWaferContent">
+        <div class="listWaferSearchContent">
+            <!-- controlador del buscador -->
+            <div class="searchControllerWafer">
+                <!-- contador de tdas obleas pendientes -->
+                <div class="meterOfPendingWafersContent">
+                    <p>Pendientes: <span id="meterOfPendingWafers">0</span></p>
+                </div>
+                <!-- controlador para ver todas las obleas desde x fecha hasta x fecha -->
+                 <div class="seeAllWaferFromTo">
+                    <p>Ver todo</p>
+                </div>
+                <!-- input para buscar obleas en la lista -->
+                <input type="text" id="searchContent" placeholder="Buscar Por Patente . . .">
+            </div>
+
+            <div id="resultsOfSearch">
+                <!-- resultados de la busqueda -->
+            </div>
+        </div>
+        
+        <div id="listWafer">
+            <!-- resultados por defecto -->
+        </div>
+    </div>
+    <script src="../scripts/pendingWafers.js"></script>
+</body>
+</html>

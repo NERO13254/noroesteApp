@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODIFICAR  PRODUCTO</title>
+    <link rel="stylesheet" href="../styles/modifyProduct.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+    <link rel="stylesheet" href="../styles/succesAlert.css">
+</head>
+<body>
+    <!-- aca se ubican las alertas -->
+    <div id="reportStatusContent"></div>
+    <!-- es el boton para volver -->
+    <div id="backElelemet"></div>
+    <!-- se ubica la seccion de facturados -->
+    <div id="poductsBilledSection"></div>
+    <!-- aca se ubica la ventana de series -->
+    <div id="serialWindowEmergentContent"></div>
+
+    
+    <div class="titleContent">
+        <h2>MODIFICAR PRODUCTO</h2>
+    </div>
+
+    <div class="inputCntent" id="inputContent">
+        <!-- se ubican todos los inputs -->
+        <div class="containerDataInputs">
+            <!-- codigo interno del prodcuto MNO01 -->
+            <div class="containerInput">
+                <label for="insideid">Codigo Interno</label>
+                <input type="text" name="" id="insideid" class="infoContent">
+            </div>
+            <!-- Nombre  -->
+            <div class="containerInput">
+                <label for="name">Nombre</label>
+                <input type="text" name="" id="name" class="infoContent">
+            </div>
+            <!-- descripcion  -->
+            <div class="containerInput">
+                <label for="name">Descripcion</label>
+                <textarea name="" id="description" class="infoContent"></textarea>
+            </div>
+            <!-- Marca -->
+            <div class="containerInput">
+                <label for="brand">Marca</label>
+                <input type="text" name="" id="brand" class="infoContent">
+            </div>
+            <!-- valor venta -->
+            <div class="containerInput">
+                <label for="finalvalue">Valor de Venta</label>
+                <input type="text" name="" id="finalvalue" class="infoContent">
+            </div>
+            <!-- valor costo -->
+            <div class="containerInput">
+                <label for="buyvalue">Valor de Costo</label>
+                <input type="text" name="" id="buyvalue" class="infoContent">
+            </div>
+            <!-- precio mayorista -->
+            <div class="containerInput">
+                <label for="wholesalervalue">Precio mayorista</label>
+                <input type="text" name="" id="wholesalervalue" class="infoContent">
+            </div>
+            <!-- existencias totales-->
+            <div class="containerInput" id="existencesContent">
+                <label for="existence">Existencias Totales</label>
+                <div class="controllerExistences">
+                    <input type="text" name="" id="existence" class="infoContent">
+                    <button id="modifyExistences">Modificar</button>
+                </div>
+            </div>
+            <!-- serie -->
+            <div class="containerInput">
+                <label for="serial">Serie</label>
+                <input type="text" name="" id="serial" class="infoContent">
+            </div>
+            <!-- imagen -->
+            <form class="containerInput" id="addOrChangeImg">
+                <input type="file" name="addImg" id="addImg">
+                <button type="submit" id="addImgButton">Subir imagen a la web</button>
+            </form>
+        </div>
+        <!-- imagen -->
+        <div class="imgContent">
+            <img src="" alt="" id="path" class="infoContent">
+        </div>
+        <!-- contenedor de los botones -->
+        <div class="buttonController">
+            <button id="addExistences">Existencias</button>
+            <button id="deleteProduct">Eliminar Producto</button>
+            <button id="saveProduct">Guardar</button>
+        </div>
+    </div>
+    <!-- contenedor donde se ubica la alerta -->
+    <div id="alertConainer"></div>
+
+    <script src="../scripts/modifyProduct.js"></script>
+</body>
+</html>
