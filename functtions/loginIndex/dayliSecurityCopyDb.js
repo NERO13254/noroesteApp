@@ -1,9 +1,12 @@
 const fs = require("fs");
 const path = require("path");
+const { pushToGitHub } = require("./pushToGitHub");
 
 async function dayliSecurityCopyDb(destinationPath) {
 
     const pathDb = '\\\\SANDRA\\db\\db.db';
+
+    await pushToGitHub("C:\\Users\\Usuario\\Desktop\\electron\\2\\pruebba");
 
     // obtiene el nombre del día en español (jueves)
     let newDate = new Date();
