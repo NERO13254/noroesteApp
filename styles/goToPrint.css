@@ -1,0 +1,33 @@
+.dataClient {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin-bottom: 3%;
+}
+.rowGuide{
+    display: grid;
+    grid-template-columns: 12% 11% 43% 11% 11% 12%;
+}
+.orderContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr 1fr;
+}
+.orderContainer p {
+    font-size: 14px;
+}
+.payVal{
+    display: grid;
+    width: 34%;
+    grid-template-columns: 36% 50%;
+    margin-left: auto;
+}
+.obsP{
+    border-bottom: 1px solid black;
+    font-size: 13px;
+    width: 95%;
+    margin: auto;
+}
+ @media print {
+    .no-print{
+        display: none;
+    }
+ }

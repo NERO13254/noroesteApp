@@ -1,0 +1,90 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inputContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin: 0.5% auto;
+    width: 88%;
+    align-items: center;
+}
+.inputsContent{
+    display: grid;
+    grid-template-columns: 21% 21%;
+    grid-gap: 7%;
+}
+.inputsContent input{
+    width: 100%;
+}
+.inputContent strong{
+    font-size: 12px;
+}
+.inputContent select {
+    border: 1px solid #ccc;
+    padding: 1%;
+    max-width: 181px;
+    min-width: 181px;
+}
+.inputContent input {
+    border: 1px solid #ccc;
+    padding: 0.5%;
+    outline: none;
+    width: 100%;
+}
+.inputContent input::placeholder{
+    color: #d1d1d1;
+    font-weight: lighter;
+    font-size: 12px;
+    font-style: oblique;
+    letter-spacing: 2px;
+}
+.imgContent{
+    width: 132px;
+    height: 132px;
+    border: 1px solid #ccc;
+}
+.buttonController{
+    display: grid;
+    grid-template-columns: 10fr 1fr 10fr;
+    align-items: center;
+    justify-content: center;
+}
+.buttonController button {
+    background-color: rgb(115, 115, 184);
+    font-size: 13px;
+    color: white;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: 0.5em;
+    width: 50%;
+    margin: auto;
+}
+.autoFillContent {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    border-radius: 100%;
+}
+.autoFillContent input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.dataCilinder{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 4%;
+}
+.inputContentCilInfo{
+    display: grid;
+    font-size: 8px;
+}

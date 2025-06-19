@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUENTAS CORRIENTES </title>
+    <link rel="stylesheet" href="../styles/viewCtaCte.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+</head>
+<body>
+    <div id="backBtn"></div>
+    <!-- se ubica la alerta de reportStatus -->
+    <div id="statusContent"></div>
+
+    <div class="titleContent">
+        <div class="searcherCtaCte">
+            <div class="searchCta">
+                <input type="text" placeholder="Buscar . . ." id="searchInput">
+            </div>
+        </div>
+    </div>
+
+    <!-- contenedor general de cuentas corrientes -->
+    <div id="allCtaCteContent">
+        <!-- se encuentran las cta cte buscadas -->
+        <div class="contentSearchedCtaCte" id="contentSearchedCtaCte"></div>
+
+        <!-- se ubican las cuentas correintes por defecto -->
+        <div class="listCtaCte" id="listCtaCte"></div>
+    </div>  
+    
+    
+    <script src="../scripts/viewCtaCte.js"></script>
+</body>
+</html>

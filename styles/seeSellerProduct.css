@@ -1,0 +1,76 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.searherContent{
+    margin-bottom: 5%;
+    display: flex;
+}
+.searherContent input , #searchFor, .searherContent button {
+    border: 1px solid #ccc;
+    outline: 0px;
+    max-height: 30px;
+}
+#searchFor{
+    display: block;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.divProd , .containerResultsSearched{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 1px solid #ccc;
+    padding: 2% 0px;
+    text-align: center;
+}
+.searherContent button , #quitSellerProds{
+    background-color: rgb(115, 115, 184);
+    font-size: 13px;
+    color: white;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: .5em;
+}
+#searchResults{
+    position: absolute;
+    width: 97.5%;
+    height: 80.4vh;
+    overflow: scroll;
+    background: white;
+    border: 1px solid #ccc;
+}
+#searchResults::-webkit-scrollbar , #listContent::-webkit-scrollbar {
+    width: 6px; /* Ancho de la barra de desplazamiento */
+    height: 0px;
+    border-radius: 6px;
+    background-color: #f1f3f4; 
+}
+#searchResults::-webkit-scrollbar-thumb , #listContent::-webkit-scrollbar-thumb{
+    background: #8a8a8a; 
+    border-radius: 6px; /* Radio del borde para redondear las esquinas */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#listContent{
+    width: 100%;
+    height: 77vh;
+    overflow: scroll;
+    border: 1px solid #ccc;
+}
+.containerGuide{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+.answerStatus{
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 0% 2%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-left: 65%;
+    top: 0;
+}

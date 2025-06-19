@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Oblea</title>
+    <link rel="stylesheet" href="../styles/newWafer.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+</head>
+<body>
+    <div id="reportStatusContent"></div>
+    <div class="containerDivs">
+        <!-- codigo de taller y fecha de hoy -->
+        <div class="row1">
+            <!-- codigo taller -->
+            <div class="inputContentRow1" id="workshopCodeContent">
+                <label for="workShopCodeInput" class="labelContent">Codigo de taller</label>
+                <input type="text" name="workShopCode" id="inputData">
+            </div>
+            <!-- fecha de hoy -->
+            <div class="inputContentRow1" id="dateContainer">
+                <label for="dataNow" class="labelContent">Fecha</label>
+                <input type="text" name="firstDateClient" id="inputData">
+            </div>
+            <!-- Numero de oblea anterior -->
+            <div class="inputContentRow1" id="oldObleaContent">
+                <label for="dataNow" class="labelContent">Oblea Anterior</label>
+                <input type="text" name="oldOblea" id="inputData">
+            </div>
+            <!-- numero de oblea nuevo -->
+            <div class="inputContentRow1">
+                <label for="dataNow" class="labelContent">Oblea Nueva</label>
+                <input type="text" name="newOblea" id="inputData">
+            </div>
+        </div>
+        <!-- datos del vehiculo -->
+        <div class="row2">
+            <strong class="subTitleStrong" class="labelContent">Datos del Vehiculo</strong>
+            <div class="inputsDataVehicleContent">
+                <!-- modelo -->
+                <div class="divContentModel">
+                    <label for="modelCar" class="labelContent">Modelo </label>
+                    <input type="text" name="modelCar" placeholder="Falcon . . ." id="inputData">
+                </div>
+                <!-- Marca -->
+                <div class="divContentModel">
+                    <label for="brandCar" class="labelContent">Marca</label>
+                    <input type="text" name="brandCar" id="inputData" placeholder="Ford . . . ">
+                </div>
+                <!-- año -->
+                <div class="divContentModel">
+                    <label for="yearCar" class="labelContent">Año</label>
+                    <input type="text" name="yearCar" id="inputData" placeholder="2011 . . .">
+                </div>
+                <!-- dominio -->
+                <div class="divContentModel">
+                    <label for="domainCar" class="labelContent">Dominio</label>
+                    <input type="text" name="domainCar" id="inputData" placeholder="AB123CD . . .">
+                </div>
+                <!-- inyeccion -->
+                <div class="divContentModel">
+                    <strong class="subTitleStrong">Inyeccion </strong>
+                    <div class="selectContainer" id="inyeccionContainer">
+                        <!-- inyeccion si -->
+                        <label for="1inyeccion" class="labelContent">Si</label>
+                        <div class="inputContentCheckBox">
+                            <input type="checkbox" name="inyeccion" id="inyeccionYes" value="1">
+                        </div>
+                        <!-- inyeccion no -->
+                        <label for="0inyeccion" class="labelContent">No</label>
+                        <div class="inputContentCheckBox">
+                            <input type="checkbox" name="inyeccion" id="inyeccionNo" value="0">
+                        </div>
+                    </div>
+                </div>
+                <!-- tipo de operacion -->
+                <div class="divContentModel" id="contentInputs">
+                    <strong class="subTitleStrong">Tipo de operación</strong>
+                    <div class="operationsContent">
+                        <!-- baja -->
+                        <div class="selectContainer">
+                            <label for="BbajaICheked" class="labelContent">Baja</label>
+                            <div class="inputContentCheckBox">
+                                <input type="checkbox" name="typeOperationGeneral" value="B" id="typeB">
+                            </div>
+                        </div>
+                        <!-- conversion -->
+                        <div class="selectContainer">
+                            <label for="CconversionCheked" class="labelContent">Conversión</label>
+                            <div class="inputContentCheckBox">
+                                <input type="checkbox" name="typeOperationGeneral" value="C" id="typeC">
+                            </div>
+                        </div>
+                        <!-- modificación -->
+                        <div class="selectContainer">
+                            <label for="MmodificationCheked" class="labelContent">Modificación</label>
+                            <div class="inputContentCheckBox">
+                                <input type="checkbox" name="typeOperationGeneral" value="M" id="typeM">
+                            </div>
+                        </div>
+                        <!-- revAnual -->
+                        <div class="selectContainer">
+                            <label for="RrevAnualCheked" class="labelContent">Rev. Anual</label>
+                            <div class="inputContentCheckBox">
+                                <input type="checkbox" name="typeOperationGeneral" value="R" id="typeR">
+                            </div>
+                        </div>
+                        <!-- Desmontaje -->
+                        <div class="selectContainer">
+                            <label for="DdesmontajeCheked" class="labelContent">Desmontaje</label>
+                            <div class="inputContentCheckBox">
+                                <input type="checkbox" name="typeOperationGeneral" value="D" id="typeD">
+                            </div>
+                        </div>
+                        <!-- tipo de vehiculo -->
+                        <div class="selectContainer" id="optionContainerSelect">
+                            <label for="typeVhecle" class="labelContent">Tipo de vehiculo</label>
+                            <select name="typeVehicle" id="inputData" class="optionContenTypeVheicle" >
+                                <option value="Taxi">Taxi</option>
+                                <option value="Pick-up">Pick-up</option>
+                                <option value="part" selected>Part</option>
+                                <option value="bus">Bus</option>
+                                <option value="oficual">Oficial</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- datos de la persona -->
+        <div class="row3">
+            <strong class="subTitleStrong" class="labelContent">Datos del Propietario</strong>
+            <div class="personData">
+                <!-- dni -->
+                <div class="inputContentRow3">
+                    <label class="labelContent" for="dni">Dni</label>
+                    <input type="text" name="dni" class="dni" id="inputData" placeholder="5465837565 . . . ">
+                </div>
+                <!-- typeDni -->
+                <div class="inputContentRow3">
+                    <label class="labelContent" for="typeDni">Tipo de Dni</label>
+                    <select name="typeDniData" id="inputData" class="optionContenTypeVheicle">
+                        <option value="DNI" selected>DNI</option>
+                        <option value="LC">LC</option>
+                        <option value="LE">LE</option>
+                        <option value="CUIT">CUIT</option>
+                    </select>
+                </div>
+                <!-- nombre y apellido -->
+                <div class="inputContentRow3">
+                    <label class="labelContent" for="nameAndSuname" >Nombre y apellido</label>
+                    <input type="text" name="nameAndSuname" class="names" id="inputData" placeholder="Nombre y Apellido . . .">
+                </div>
+                <!-- Domicilio -->
+                <div class="inputContentRow3">
+                    <label class="labelContent" for="domicilio">Domicilio</label>
+                    <input type="text" name="domicilio" class="direccion" id="inputData" placeholder="Calle 123">
+                </div>
+                <!-- localidad -->
+                <div class="inputContentRow3">
+                    <label class="labelContent" for="location">Localidad</label>
+                    <input type="text" name="location" class="location" id="inputData" placeholder="Los Polvorines . . .">
+                </div>
+                <!-- tel -->
+                <div class="inputContentRow3">
+                    <label class="labelContent" for="">TEL</label>
+                    <input type="text" name="tel" id="inputData" placeholder="11 123 . . .">
+                </div>
+                <!-- provincia -->
+                <div class="inputContentRow3">
+                    <label class="labelContent" for="province">Provincia</label>
+                    <input type="text" name="province" class="country" id="inputData" placeholder="Bsas">
+                </div>
+                <!-- cp -->
+                <div class="inputContentRow3">
+                    <label class="labelContent" for="cpUser">CP</label>
+                    <input type="text" name="cpUser"class='cp' id="inputData" placeholder="1613 . . .">
+                </div>
+            </div>
+        </div>
+        <div class="row4" id="regulatorInputsContent">
+            <strong class="subTitleStrong">Datos del Regulador</strong>
+            <!-- datos del regulador -->
+            <div class="regulatorData">
+                <!-- fecha de montaje -->
+                <div class="dateReg">
+                    <label for="" class="labelContent">Fecha Montaje</label>
+                    <input type="text" name="fistRegulatorDate" id="inputData">
+                </div>
+                <!-- codigo de regulador nuevo -->
+                <div class="dateReg">
+                    <label for="" class="labelContent">Codigo Regulador</label>
+                    <input type="text" name="reguatorCode" id="inputData">
+                </div>
+                <!-- numero serie regulador -->
+                <div class="dateReg">
+                    <label for="" class="labelContent">N°Serie</label>
+                    <input type="text" name="serialNumberRegulator" id="inputData">
+                </div>
+                <!-- tipo de operacion para el regulador -->
+                <div class="dateReg" id="operationTypeContentRegulator">
+                    <label for="operationTypeReg" class="labelContent">Tipo de Operación</label>
+                    <input type="text" name="operationTypeRegulator" id="inputData">
+                </div>
+                <!-- nuevo o usado -->
+                <div class="dateReg">
+                    <label for="operationTypeReg" class="labelContent">Nuevo/Usado</label>
+                    <select name="newOrUsedRegulator" id="inputData">
+                        <option value="new" selected>Nuevo</option>
+                        <option value="used">Usado</option>
+                    </select>
+                </div>                 
+            </div>
+
+            <div id="regulatorInputDynamic"></div>
+        </div>
+        <!-- datos de los cilindros -->
+        <div class="row5">
+            <strong class="subTitleStrong" class="labelContent">Datos de los Cilindros</strong>
+            <div class="ammountCilindersContent">
+                <label for="ammountCilindersInput" class="labelContent">Cantidad de cilindros</label>
+                <input type="number" id="ammountCilindersContent" placeholder="2 . . .">
+            </div>
+            
+            <div id="cilinderesContainer">
+                <!-- se insertan los campos de los cilindros -->
+            </div>
+        </div>
+        <div class="row6" id="buttonContent">
+            <button id="saveWafer">Guardar</button>
+        </div>
+    </div>
+
+    <script src="../scripts/newWafer.js"></script>
+</body>
+</html>

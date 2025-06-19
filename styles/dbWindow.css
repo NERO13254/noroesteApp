@@ -1,0 +1,69 @@
+
+.containerAll{
+    width: 100%;
+    height: 94vh;
+    display: grid;
+    grid-template-rows: 4% 1fr 8% 6%;
+
+}
+#tableContents {
+    display: grid;
+    bottom: 14%;
+    background: white;
+    overflow: scroll;
+}
+#tableContents::-webkit-scrollbar, #globalResults::-webkit-scrollbar{
+    width: 0px;
+    height: 10px;
+    background-color: #ccc;
+}
+#globalResults::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+#guideContent{
+    display: grid;
+    height: 50px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+}
+#tableContents::-webkit-scrollbar-thumb , #guideContent::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+.dataTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.dataTable strong{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+#globalResults{
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+.dataContent{
+    display: grid;
+}
+.dataContent input {
+    border: 1px solid #ccc;
+    padding: 7px;
+    background-color: transparent;
+}
+.limiterResults{
+    display: grid;
+    width: 250px;
+}
+.limiterResults strong{
+    font-size: 13px;
+    font-weight: bold;
+}

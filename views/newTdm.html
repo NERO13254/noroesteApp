@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo TDM certificado</title>
+    <link rel="stylesheet" href="../styles/newClien.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+</head>
+<body>
+    <div id="backBtn"></div>
+    <div class="formConten">
+        <div class="optionContent">
+            <label for="workshop">taller</label>
+            <input type="text" class="tdmData" name="workshop" id="workshop">
+        </div>
+
+        <div class="optionContent">
+        <label for="workshopCode">codigo de taller</label>
+            <input type="text" name="workshopCode" id="workshopCode"> 
+        </div>
+
+        <div class="optionContent">
+            <label for="cuit">cuit</label>
+            <input type="text" class="tdmData" name="cuit" id="cuit">  
+        </div>
+
+        <div class="optionContent">
+            <label for="pec">pec</label>
+            <input type="text" name="pec" id="pec">            
+        </div>
+
+        <div class="optionContent">
+            <label for="iva">iva</label>
+            <select name="iva" id="iva" class="tdmData">
+                <option value="inscripto" selected>inscripto</option>
+                <option value="monotributo">monotributo</option>
+            </select>   
+        </div>
+
+        <div class="optionContent">
+            <label for="home">domicilio</label>
+            <input type="text" class="tdmData" name="home" id="location">            
+        </div>
+
+        <div class="optionContent">
+            <label for="country">localidad</label>
+            <input type="text" class="tdmData" name="country" id="country">   
+        </div>
+        <div class="optionContent">
+            <label for="country">Telefono</label>
+            <input type="text" class="tdmData" name="country" id="phone">  
+        </div>
+        <div class="optionContent">
+            <label for="country">Gmail</label>
+            <input type="text" class="tdmData" name="country" id="mail">   
+        </div>
+        <div class="optionContent">  
+            <button id="saveClient" >Guardar</button>       
+        </div>
+    </div>
+
+<script src="../scripts/newTdm.js"></script>
+
+</body>
+</html>

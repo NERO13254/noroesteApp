@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VER LOCALIDADES</title>
+    <link rel="stylesheet" href="../styles/seeLocation.css">
+    <link rel="stylesheet" href="../styles/succesAlert.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+</head>
+<body>
+    <div id="backBtn"></div>
+    <div id="reportStatus"></div>
+
+    <!-- contenedor del buscador y el titulo -->
+    <div class="ttileContent">
+        <h2>Localidades cargadas</h2>
+    </div>
+
+    <!--buscador y  boton para agrega una nueva localidad -->
+    <div class="listControllers">
+        <input type="text" id="searchLocations" placeholder="Buscar . . . " >
+        <button id="newLocation">Añadir localidad </button>
+    </div>
+    
+    <!-- contenedor de localidades ingresadas -->
+    <div id="allResults">
+
+        <!-- resultados del buscador -->
+        <div class="resultsContentSeach" id="resultsContentSeach"></div>
+
+        <!-- localidades por defecto -->
+        <div class="locationsContent" id="locationsContent"></div>
+
+    </div>
+
+    <!-- seccin de configuración de localidades  -->
+    <div class="settingsLocationContent">
+
+        <strong id="idLocation"></strong>
+
+        <div class="dataContent">
+            <label for="name">Nombre</label>
+            <input type="text" id="name"  placeholder="Nombre . . .">
+        </div>
+
+        <div class="dataContent">
+            <label for="cp">Codigo postal</label>
+            <input type="number" id="cp" placeholder="Codigo Postal . . .">
+        </div>
+
+        <div class="buttonControllerSettings">
+            <button id="cancelProcessLocation">Cancelar</button>
+            <button id="deleteLocation">Eliminar Localidad</button>
+            <button id="insertLocation" >Insertar</button>
+            <button id="saveModifies">Guardar</button>
+        </div>
+
+    </div>
+
+    <script src="../scripts/seeLocation.js"></script>
+</body>
+</html>

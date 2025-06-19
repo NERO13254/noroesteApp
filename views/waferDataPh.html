@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oblea con Ph</title>
+    <link rel="stylesheet" href="../styles/waferDataPh.css">
+</head>
+<body>
+    <strong>Oblea con ph</strong>
+
+    <div id="inputContainers">
+        <!-- oblea nuva y oblea anterior -->
+        <div class="newAndOldWaferContent">
+            <div class="inputContentRow1" id="oldObleaContent">
+                <label for="dataNow" class="labelContent">Oblea Anterior</label>
+                <input type="text" name="oldOblea" id="inputData">
+            </div>
+            <div class="inputContentRow1">
+                <label for="dataNow" class="labelContent">Oblea Nueva</label>
+                <input type="text" name="newOblea" id="inputData">
+            </div>
+        </div>
+
+        <div class="row2">
+            <strong class="subTitleStrong">Datos del Vehiculo</strong>
+            <div class="inputsDataVehicleContent">
+                <!-- modelo -->
+                <div class="divContentModel">
+                    <label for="modelCar" class="labelContent">Modelo </label>
+                    <input type="text" name="modelCar" placeholder="Falcon . . ." id="inputData">
+                </div>
+                <!-- Marca -->
+                <div class="divContentModel">
+                    <label for="brandCar" class="labelContent">Marca</label>
+                    <input type="text" name="brandCar" id="inputData" placeholder="Ford . . . ">
+                </div>
+                <!-- año -->
+                <div class="divContentModel">
+                    <label for="yearCar" class="labelContent">Año</label>
+                    <input type="text" name="yearCar" id="inputData" placeholder="2011 . . .">
+                </div>
+                <!-- dominio -->
+                <div class="divContentModel">
+                    <label for="domainCar" class="labelContent">Dominio</label>
+                    <input type="text" name="domainCar" id="inputData" placeholder="AB123CD . . .">
+                </div>
+                <!-- inyeccion -->
+                <div class="divContentModel">
+                    <strong class="subTitleStrong">Inyeccion </strong>
+                    <div class="selectContainer" id="inyeccionContainer">
+                        <!-- inyeccion si -->
+                        <form>
+                            <label for="1inyeccion" class="labelContent">Si</label>
+                            <div class="inputContentCheckBox">
+                                <input type="radio" checked name="inyeccion" id="inyeccionYes" value="1">
+                            </div>
+                            <!-- inyeccion no -->
+                            <label for="0inyeccion" class="labelContent">No</label>
+                            <div class="inputContentCheckBox">
+                                <input type="radio" name="inyeccion" id="inyeccionNo" value="0">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- tipo de operacion -->
+                <div class="divContentModel" id="contentInputs">
+                    <strong class="subTitleStrong">Tipo de operación</strong>
+                    <div class="operationsContent">
+                        <!-- baja -->
+                        <form>
+                            <div class="selectContainer">
+                                <label for="BbajaICheked" class="labelContent">Baja</label>
+                                <div class="inputContentCheckBox">
+                                    <input type="radio" name="typeOperationGeneral" value="B" id="typeB">
+                                </div>
+                            </div>
+                            <!-- conversion -->
+                            <div class="selectContainer">
+                                <label for="CconversionCheked" class="labelContent">Conversión</label>
+                                <div class="inputContentCheckBox">
+                                    <input type="radio" name="typeOperationGeneral" value="C" id="typeC">
+                                </div>
+                            </div>
+                            <!-- modificación -->
+                            <div class="selectContainer">
+                                <label for="MmodificationCheked" class="labelContent">Modificación</label>
+                                <div class="inputContentCheckBox">
+                                    <input type="radio" name="typeOperationGeneral" value="M" id="typeM">
+                                </div>
+                            </div>
+                            <!-- revAnual -->
+                            <div class="selectContainer">
+                                <label for="RrevAnualCheked" class="labelContent">Rev. Anual</label>
+                                <div class="inputContentCheckBox">
+                                    <input type="radio" name="typeOperationGeneral" value="R" checked id="typeR">
+                                </div>
+                            </div>
+                            <!-- Desmontaje -->
+                            <div class="selectContainer">
+                                <label for="DdesmontajeCheked" class="labelContent">Desmontaje</label>
+                                <div class="inputContentCheckBox">
+                                    <input type="radio" name="typeOperationGeneral" value="D" id="typeD">
+                                </div>
+                            </div>
+                        </form>
+                        <!-- tipo de vehiculo -->
+                        <div class="selectContainer" id="optionContainerSelect">
+                            <label for="typeVhecle" class="labelContent">Tipo de vehiculo</label>
+                            <select name="typeVehicle" id="inputData" class="optionContenTypeVheicle">
+                                <option value="Taxi">Taxi</option>
+                                <option value="Pick-up">Pick-up</option>
+                                <option value="part" selected="">Part</option>
+                                <option value="bus">Bus</option>
+                                <option value="oficual">Oficial</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- datos del regulador -->
+        <div class="row4" id="regulatorInputsContent">
+            <!-- datos del regulador actual -->
+            <div class="regulatorData">
+                <strong class="subTitleStrong">Datos del Regulador Actual</strong>
+                <div class="regulatorInptusContent">
+                    <!-- fecha de montaje -->
+                    <div class="dateReg">
+                        <label for="" class="labelContent">Fecha Montaje</label>
+                        <input type="text" name="fistRegulatorDate" id="inputData">
+                    </div>
+                    <!-- codigo de regulador nuevo -->
+                    <div class="dateReg">
+                        <label for="" class="labelContent">Codigo Regulador</label>
+                        <input type="text" name="reguatorCode" id="inputData">
+                    </div>
+                    <!-- numero serie regulador -->
+                    <div class="dateReg">
+                        <label for="" class="labelContent">N°Serie</label>
+                        <input type="text" name="serialNumberRegulator" id="inputData">
+                    </div>
+                    <!-- tipo de operacion para el regulador -->
+                    <div class="dateReg" id="operationTypeContentRegulator">
+                        <label for="operationTypeReg" class="labelContent">Tipo de Operación</label>
+                        <input type="text" name="operationTypeRegulator" id="inputData">
+                    </div>
+                    <!-- nuevo o usado -->
+                    <div class="dateReg">
+                        <label for="operationTypeReg" class="labelContent">Nuevo/Usado</label>
+                        <select name="newOrUsedRegulator" id="inputData">
+                            <option value="new">Nuevo</option>
+                            <option value="used" selected >Usado</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- datos del regulador nuevo -->
+            <div class="regulatorData" id="regulatorReplace">
+                <strong class="subTitleStrong">Datos del Regulador Nuevo </strong>
+                <!-- fecha de montaje -->
+                <div class="regulatorInptusContent">
+                    <div class="dateReg">
+                        <label for="" class="labelContent">Fecha Montaje</label>
+                        <input type="text" name="fistRegulatorDateReplace" id="inputData">
+                    </div>
+                    <!-- codigo de regulador nuevo -->
+                    <div class="dateReg">
+                        <label for="" class="labelContent">Codigo Regulador</label>
+                        <input type="text" name="reguatorCodeReplace" id="inputData">
+                    </div>
+                    <!-- numero serie regulador -->
+                    <div class="dateReg">
+                        <label for="" class="labelContent">N°Serie</label>
+                        <input type="text" name="serialNumberRegulatorReplace" id="inputData">
+                    </div>
+                    <!-- tipo de operacion para el regulador -->
+                    <div class="dateReg" id="operationTypeContentRegulator">
+                        <label for="operationTypeReg" class="labelContent">Tipo de Operación</label>
+                        <input type="text" name="operationTypeRegulatorReplace" id="inputData">
+                    </div>
+                    <!-- nuevo o usado -->
+                    <div class="dateReg">
+                        <label for="operationTypeReg" class="labelContent">Nuevo/Usado</label>
+                        <select name="newOrUsedRegulatorReplace" id="inputData">
+                            <option value="new" selected="">Nuevo</option>
+                            <option value="used">Usado</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="inputsCollecteds">
+        <!-- se ubican los datos del usuario -->
+    </div>
+
+    <div id="cilindersContainers">
+        <!-- se ubican los cillindros dinamicos -->
+    </div>
+
+
+    <div id="buttonController">
+        <button id="addNewCilinder">Añadir Cilindro para Ph</button>
+        <button id="addSimpleCilinder">Añadir cilindro simple</button>
+        <button id="saveWafer">Guardar</button>
+    </div>
+    
+    <script src="../scripts/waferDataPh.js"></script>
+</body>
+</html>

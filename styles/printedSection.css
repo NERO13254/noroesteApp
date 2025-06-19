@@ -1,0 +1,183 @@
+
+strong{
+    position: absolute;
+}
+#workShopCode {
+    left: 80%;
+    top: 28%;
+}
+#finishDateContent , #dateNow{
+    left: 61%;
+    top: 18%;
+}
+#dateNow {
+    top: 10%;
+}
+#brandCar , #modelcar , #yearCar , #domain{
+    top: 33%;
+    left: 30%;
+}
+#modelcar{
+
+    left: 162px;
+}
+#yearCar{
+    left: 45%;
+}
+#domain{
+    left: 11%;
+}
+#yesInyecc{
+    top: 38%;
+    left: 30%;
+}
+#noInyecc{
+    top: 38%;
+    left: 33%;
+}
+#taxi{
+    top: 38%;
+    left: 46%;
+}
+#PickUp{
+    top: 38%;
+    left: 49%;
+}
+#part{
+    top: 38%;
+    left: 52%;
+}
+#revisionAnual ,#modificacion{
+    top: 37%;
+    left: 93%;
+}
+#modificacion{
+    left: 90%;
+    top: 35%;
+}
+#nameAndSurname , #street , #numberStreet , #cp{
+    top: 48%;
+    left: 12%;
+}
+#street{
+    left: 51%;
+}
+#numberStreet {
+    left: 81%;
+}
+#cp{
+    left: 87%;
+}
+#location , #province , #phone ,#dni{
+    top: 54%;
+}
+#location{
+    left: 12%;
+}
+#province{
+    left: 34%;
+}
+#phone{
+    left: 53%;
+}
+#dni{
+    left: 72%;
+}
+#actual, #montaje , #desmontaje{
+    top: 61%;
+}
+#actual , #actual2{
+    left: 20%;
+}
+#actual2 , #montaje1 , #desmontaje1 ,#serialManometro, #tuberiaSerie, #altaTuberiaSerial{
+    top: 66%;
+}
+#montaje, #montaje1{
+    left: 33%;
+}
+#desmontaje , #desmontaje1{
+    left: 45%;
+}
+#codeManometro, #serialManometro , #tuberiaCode , #codeManometro, #serialManometro, #tuberiaCode{
+    top: 66%;
+    left: 62%;
+}
+
+#tuberiaCode , #tuberiaSerie{
+    left: 76%;
+}
+#altaTuberiaSerial{
+    left: 87%;
+}
+#codeCil1 , #codeCil2, #codeCil3 , #codeCil4 , #serialCil1 , #cilNew1 ,#cilOld1, #monthFab1 ,#yearFab1 ,#monthRevision1 ,#yearRevision1 , #crpc1 ,#typeOperation1 ,#valvulaCode1,#valvulaSerial1{
+    left: 10%;
+    top: 72%;
+}
+#codeCil2 , #serialCil2 ,#cilNew2 ,#cilOld2 , #monthFab2 ,#yearFab2 ,#monthRevision2,#yearRevision2 ,#crpc2, #typeOperation2 ,#valvulaCode2 ,#valvulaSerial2{
+    top: 77%;
+}
+#codeCil3 , #serialCil3 ,#cilNew3, #cilOld3 ,#monthFab3 ,#yearFab3 ,#monthRevision3 ,#yearRevision3 ,#crpc3,#typeOperation3 ,#valvulaCode3 ,#valvulaSerial3{
+    top: 85%;
+}
+#codeCil4 , #serialCil4,#cilNew4 , #cilOld4 , #monthFab4 ,#yearFab4 ,#monthRevision4 ,#yearRevision4 ,#crpc4,#typeOperation4 ,#valvulaCode4 ,#valvulaSerial4{
+    top: 105%;
+}
+#serialCil1 , #serialCil2 , #serialCil3 , #serialCil4 {
+    left: 20%;
+}
+#cilNew1 , #cilNew2 , #cilNew3 , #cilNew4 {
+    left: 40%;
+}
+#cilOld1 ,#cilOld2 ,#cilOld3, #cilOld4{
+    left: 42%;
+}
+#monthFab1 , #monthFab2 , #monthFab3 , #monthFab4{
+    left: 45.5%;
+}
+#yearFab1 ,#yearFab2 ,#yearFab3 ,#yearFab4{
+    left: 48%;
+}
+#monthRevision1 ,#monthRevision2 ,#monthRevision3 , #monthRevision4{
+    left: 51%;
+}
+#yearRevision1 ,#yearRevision2 ,#yearRevision3 ,#yearRevision4{
+    left: 53%;
+}
+#crpc1 ,#crpc2 ,#crpc3 ,#crpc4{
+    left: 57%;
+}
+#typeOperation1, #typeOperation2 ,#typeOperation3 ,#typeOperation4{
+    left: 61%;
+}
+#valvulaCode1, #valvulaCode2 ,#valvulaCode3 ,#valvulaCode4{
+    left: 71%;
+}
+#valvulaSerial1,#valvulaSerial2 ,#valvulaSerial3 ,#valvulaSerial4{
+    left: 78%;
+}
+#sujeccionCode , #sujeccionSerial , #ElectrovalvulaCode,#electroValvulaGncCode , #mezcladorCode ,#venteoCode,#llaveConmutadoraCode {
+    top: 113%;
+    left: 16%;
+}
+#sujeccionSerial, #electroNaftaSerial , #electroValvulaGncSerial ,#mezcladorSerial , #venteoSerial,#llaveConmutadoraSerial{
+    top: 118%;
+}
+#electroNaftaCode , #electroNaftaSerial , #ElectrovalvulaCode{
+    left: 31%;
+}
+#electroValvulaGncCode , #electroValvulaGncSerial{
+    left: 46%;
+}
+#mezcladorCode , #mezcladorSerial{
+    left: 61%;
+}
+#venteoCode , #venteoSerial{
+    left: 76%;
+}
+#llaveConmutadoraCode , #llaveConmutadoraSerial{
+    left: 90%;
+}
+#obs{
+    top: 102%;
+    left: 56%;
+}

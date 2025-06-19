@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOJA DE RUTA</title>
+    <link rel="stylesheet" href="../styles/printRoadMap.css">
+</head>
+<body>
+    <style media="print">
+        #printRoadMap  {
+            display: none;
+        }
+    </style>
+    <button id="printRoadMap">IMPRIMIR</button>
+    <div class="headerContent">
+        <div class="title">
+            <h2>HOJA DE RUTA CILINDRO</h2>
+            <h2>NOROESTECIL S.R.L</h2>
+        </div>
+        <div class="left">
+            <strong id="data"></strong>
+
+            <div class="info">
+                <p>COD INT:</span> </p>
+                <strong> <span id="insideId"></strong>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="cilinderData">
+        <div class="info">
+            <p>COD HOM:  </p>
+            <strong><span id="omologationCode"></strong></p>
+            
+        </div>
+        <div class="info">
+            <p>MARCA:  </p>
+            <strong><span id="brand"></span></strong>
+        </div>
+        <div class="info">
+            <p>SERIE:  </p>
+            <strong><span id="serialNumber"></span></strong>
+        </div>
+        <div class="info">
+            <p>VOL:  </p>
+            <strong><span id="volCil"></span></strong>
+        </div>
+        <div class="info">
+            <p>TARA:  </p>
+            <strong><span id="taraCil"></span></strong>
+        </div>
+        <div class="info">
+            <p>F. FAB:</p>
+            <strong><span id="dateFab"></span></strong>
+        </div>
+        <div class="info">
+            <p>ULT. CRPC: </p>
+            <strong><span id="lastCrpc"></span></strong>
+        </div>
+        <div class="info">
+            <p>NORMAS:</p>
+            <strong> <span id="rules"></span></strong>
+        </div>
+        <div class="info">
+            <p>PRES PH: </p>
+            <strong><span id="pressPh">300</span></strong>
+        </div>
+        <div class="info">
+            <p>PRLDT:</p>
+            <strong><span id="prldt">200</span> </strong>
+        </div>
+        <div class="info">
+            <strong><span id="widthCil"></span> </strong>
+        </div>
+    </div>
+
+    <div class="threadSatus">
+        <div class="titleSatus">
+            <h2>ESTADO DE LOS HILOS EFICIENTES</h2>
+        </div>
+
+        <div class="percentContainer">
+            <strong>100%</strong>
+            <strong>100%</strong>
+        </div>
+    </div>
+
+    <div class="ovalatizacion">
+        <h2>MEDICION DE OVALIZACION</h2>
+
+        <div class="medition">
+            <strong class="ov">1</strong>
+            <strong class="ov">1</strong>
+            <strong class="ov">1</strong>
+            <strong class="ov">1</strong>
+            <strong class="ov">1</strong>
+            <strong class="ov">1</strong>
+        </div>
+    </div>
+
+    <div class="temp">
+        <h3>TEMPERATURA: <span id="waterTemp"></span> </h3>
+    </div>
+
+    <div class="expansin">
+        <div class="exp">
+            <h3>EXPANSION TOTAL : <span id="totalExp"></span></h3>
+        </div>
+        <div class="exp">
+            <h3>EXPANSION PERMANENTE : <span id="perExp"></span></h3>
+        </div>
+        <h3 id="status"></h3>
+    </div>
+
+    <div class="zero">
+        <div class="contA">
+            <strong>ESPESOR LONGITUDINAL</strong>
+            <strong class="espessor"></strong>
+            <strong class="espessor"></strong>
+            <strong class="espessor"></strong>
+            <strong class="espessor"></strong>
+            <strong class="espessor"></strong>
+            <strong class="espessor"></strong>
+        </div>
+        <div class="cont">
+            <strong>OJIVA</strong>
+            <strong class="ojvie"></strong>
+            <strong class="ojvie"></strong>
+            <strong class="ojvie"></strong>
+            <strong class="ojvie"></strong>
+            <strong class="ojvie"></strong>
+            <strong class="ojvie"></strong>
+        </div>
+        <div class="cont">
+            <strong>FONDO</strong>
+            <strong class="under"></strong>
+            <strong class="under"></strong>
+            <strong class="under"></strong>
+            <strong class="under"></strong>
+            <strong class="under"></strong>
+            <strong class="under"></strong>
+        </div>
+        <div class="obs">
+            <div class="textContent">
+                <h3>OBSERVACIONES</h3>
+                <strong id="obsContent"></strong>
+            </div>
+
+            <div class="imgContent" id="imgContent">
+                <!-- ACA SE CARGA LA FOTO -->
+
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/printRoadMap.js"></script>
+</body>
+</html>

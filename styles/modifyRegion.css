@@ -1,0 +1,36 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.titleContent{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.formContent{
+    width: 50%;
+    margin: auto;
+    height: 70vh;
+}
+.buttonController{
+    display: flex;
+    justify-content: space-between;
+}
+.buttonController button{
+    background-color: rgb(115, 115, 184);
+    font-size: 13px;
+    color: white;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: 0.5em;
+}
+#regionContent{
+    width: 100%;
+    padding: 3% 0;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}

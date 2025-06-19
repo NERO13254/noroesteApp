@@ -1,0 +1,44 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.formContent{
+    display: flex;
+    flex-direction: column;
+}
+.formContent label{
+    font-weight: bolder;
+    font-size: 11px;
+}
+.formContent input{
+    width: 60%;
+    border: 1px solid #ccc;
+    padding: 0.5% 1%;
+    outline: none;
+    margin: 0% 0 3%;
+}
+.formContent input:focus{
+   outline: 2px solid #ccc; 
+}
+.alertContent{
+    background: red;
+    color: white;
+    width: 62%;
+    text-align: center;
+    padding: 1% 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#alertContainer{
+    width: 100%;
+    height: 14vh;
+}
+.buttonController button{
+    border: none;
+    padding: 0.5% 10%;
+    cursor: pointer;
+    background: rgb(115, 115, 184);
+    color: white;
+    font-weight: normal;
+}
+.calculateValue{
+    display: none;
+}

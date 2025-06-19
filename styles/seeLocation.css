@@ -1,0 +1,120 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.listControllers{
+    display: flex;
+    justify-content: space-between;
+}
+.titleContent h2{
+    margin-top: 0%;
+}
+.listControllers input {
+    border: 1px solid #ccc;
+    border-bottom: none;
+    outline: none;
+    padding: .5em;
+}
+.locationsContent{
+    width: 100%;
+    height: 60vh;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.contentDataPrinted {
+    display: grid;
+    grid-template-columns: 1fr 178px;
+    position: relative;
+    height: 29px;
+    align-items: center;
+    padding-left: 1%;
+    font-size: 14px;
+}
+.resultsContentSeach {
+    display: none;
+    width: 98%;
+    height: 65vh;
+    position: absolute;
+    background: #ffffff;
+    z-index: 2;
+    border: 1px solid #ccc;
+    overflow: scroll;
+}
+.contentDataPrinted:hover{
+    background-color: #d4d4d4;
+}
+#checkPut {
+    position: absolute;
+    width: 99%;
+    height: 100%;
+    left: 0;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.buttonController {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttonController button {
+    background-color: rgb(115, 115, 184);
+    font-size: 13px;
+    color: white;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: .5em;
+    width: 30%;
+}
+.settingsLocationContent{
+    display: none;
+    position: fixed;
+    top: 13%;
+    z-index: 4;
+    background: #333;
+    width: 94%;
+    height: 74vh;
+    color: white;
+    grid-template-rows: 7% 20% 1fr 7%;
+    padding: 2%;
+}
+.settingsLocationContent input{
+    background: transparent;
+    border: none;
+    color: white;
+}
+.settingsLocationContent button{
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+.buttonControllerSettings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dataContent {
+    display: grid;
+    height: 59px;
+    width: 30%;
+}
+#newLocation{
+    border: 1px solid #cccc;
+    border-bottom: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 185px;
+}
+#insertLocation{
+    display: none;
+}
+*::-webkit-scrollbar{
+    width: 4px;
+    height: 0px;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #333;
+}

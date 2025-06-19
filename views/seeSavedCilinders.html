@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CILINDROS CARGADOS</title>
+    <link rel="stylesheet" href="../styles/seeSavedCilinders.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+</head>
+<body>
+    <div id="backBtn"></div>
+    <div id="alertContent"></div>
+
+    
+    <!-- contendor del nombre del taller seleccionado -->
+    <div class="bodyContent"><strong id="workshopCodePrint"></strong></div>
+        
+
+    <!-- buscador -->
+    <div class="searchCils">
+        <input type="text" placeholder="BUSCAR . . ." id="startSearchCil">
+    </div>
+
+    <!-- controlador de carga de datos cilindro o obleas -->
+    <div class="selectSavedData">
+        <button id="seeCilinders">CILINDROS</button>
+        <button id="seeWafers">OBLEAS</button>
+    </div>
+
+
+    <!-- guia de cilindros -->
+    <div id="cilinderGuideContent">
+        <strong>Codigo de omologación</strong>
+        <strong>Numero de Serie</strong>
+        <strong>Codigo de Interno</strong>
+    </div>
+    <!-- guia de obleas -->
+    <div id="waferGuideContent" class="waferGuideContent">
+        <strong>id</strong>
+        <strong>Num. Oblea</strong>
+        <strong>Dominio</strong>
+        <strong>Tipo de Operación</strong>
+    </div>
+
+    <!-- contenedor general de resultados -->
+    <div id="containerAllResults">
+        <!-- resultados de busqueda -->
+        <div id="searchResults"></div>
+
+        <!-- listado de cilindros/obleas -->
+        <div id="cilinderListContent"></div>
+    </div>
+
+    <!-- contendor de botones -->
+    <div class="buttonControllerContainer">
+        <div class="buttonContent">
+            <button id="roadMap">HOJA DE RUTA</button>
+            <button id="printCevigas">CEVIGAS</button>
+            <button id="commitmentSheet">FICHA TECNICA</button>
+
+            <div class="containerButtons">
+                <div id="newOrSelectedButtons">
+
+                </div>
+                <button id="openOptionCompromisSheet">CARTA DE COMPROMISO</button>
+            </div>
+            
+            <button id="newCil">NUEVO</button>
+        </div>
+
+        <div class="buttonWaferContent">
+            <button id="newOblea">Nueva oblea</button>
+        </div>        
+    </div>
+
+    <script src="../scripts/seeSavedCilinders.js"></script>
+</body>
+</html>

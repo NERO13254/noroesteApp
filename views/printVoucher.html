@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPIMIR REMITTO</title>
+    <link rel="stylesheet" href="../styles/pintVoucher.css">
+</head>
+<body>
+    <style media="print">
+        #notPrinted{
+            display: none;
+        }
+    </style>
+    <button  id="notPrinted" onclick="printedFun()">IMPRIMIR</button>
+    <div class="headerContent">
+        <div></div>
+        <div class="titleDiv">
+            <h2>PRESUPUESTO <span id="idvoucher"></span></h2>
+        </div>
+        <div class="date">
+            <p id="hoursAndMinutes"></p>
+            <p id="fullData"></p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="bodyContent">
+        <div class="clientName">
+            <p>CLIENTE</p>
+            <p id="clientNamedDb"></p>
+        </div>
+
+        <div class="productInfo">
+            <div class="reference">
+                <p>Codigo</p>
+                <p>Descripcion</p>
+                <p>Cantidad/Serie</p>
+                <p>Precio</p>
+            </div>
+
+            <div class="productContent" id="productContent">
+
+            </div>
+        </div>
+        <div class="discountContainer">
+            <p>Total : <span id="finalNotPercent"></span></p>
+            <p>Descuento : <span id="discountContent"></span></p>
+            <p>Final : <span id="totalContent"></span> </p>
+        </div>
+    </div>
+
+    <script src="../scripts/pintVoucher.js"></script>
+</body>
+</html>

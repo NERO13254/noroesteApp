@@ -1,0 +1,129 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.headeStartSession{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.sesionController{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    z-index: 6;
+}
+.sesionController input{
+    border: 1px solid #ccc;
+    padding: 2%;
+    outline: 0px;
+}
+.name ,  .pass{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    align-items: center;
+}
+#loginAdmin {
+    background-color: rgb(115, 115, 184);
+    font-size: 13px;
+    color: white;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+#blurContent{
+    background: #bfb9b95c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    transition: all 300ms;
+    backdrop-filter: blur(7px);
+}
+
+#imgContainer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+#phtoBy{
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    right: 1%;
+    bottom: 1%;
+    background: #33333345;
+    padding: 1%;
+    width: 16%;
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: context-menu;
+}
+.underSection{
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#phtoBy button{
+    padding: 0px;
+    margin: 0;
+    height: 22px;
+    background: transparent;
+    border: none;
+    text-align: start;
+    cursor: pointer;
+}
+#openNavegator{
+    background-image: url(../img/navegador.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#toolAlertExpired{
+    position: absolute;
+    z-index: 7;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    top: 55%;
+}
+.expiredAlert{
+    width: 93%;
+    display: grid;
+    margin-left: auto;
+    grid-template-rows: 1fr 17%;
+    background: #333;
+    padding: 2% 3%;
+    color: white;
+    font-size: 13px;
+}
+.expiredAlert p  {
+    height: 100%;
+    overflow: scroll;
+}
+.expiredAlert p::-webkit-scrollbar{
+    width: 1px;
+    height: 0px;
+    background-color: #535353;
+}
+.expiredAlert p::-webkit-scrollbar-thumb{
+    background-color: white;
+}

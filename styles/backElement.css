@@ -1,0 +1,27 @@
+div:has(> .pBackTo) {
+    width: 30px;
+    cursor: pointer;
+  }
+
+#backElelemet{
+    width: 30px;
+    height: 27px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: white;
+    z-index: 5;
+}
+#backElelemet:hover{
+    background: #ccc;
+}
+.pBackTo{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+.pBackTo img {
+    width: 100%;
+    cursor: pointer;
+}

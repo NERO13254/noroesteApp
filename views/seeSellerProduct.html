@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS VENDIDOS</title>
+    <link rel="stylesheet" href="../styles/seeSellerProduct.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+</head>
+<body>
+    <!-- boton para volver atras -->
+    <div id="backBtn"></div>
+    <div class="titleContent">
+        <div class="searherContent">
+            <input type="text" placeholder="BUSCAR POR . . ." id="searchProduct">
+
+            <select name="searchFor" id="searchFor">
+                <option value="insideid" selected>CODIGO</option>
+                <option value="serialnumber">SERIE</option>
+            </select>
+            
+            <button id="startSearch">BUSCAR</button>
+        </div>
+    </div>
+
+    <div id="alertContainer">
+
+    </div>
+
+    <!-- aca se ubica el buscador especifico -->
+    <div id="searcherContainer"></div>
+    
+    <!-- aca se ubican los resultados de la busuda especifica -->
+    <div id="searchContainerResults">
+
+    </div>
+    <!-- seubicala respuesta de la busqueda -->
+    <div class="answerStatus">
+        <p id="results"></p>
+        <p id="reportError"></p>
+    </div>
+    <!-- se ubica la guia de la lista -->
+    <div id="listGuide">
+        
+    </div>
+    <!-- se ubica la lista de productos vendidos -->
+    <div id="listContent">
+
+    </div>
+    <script src="../scripts/seeSellerProduct.js"></script>
+</body>
+</html>

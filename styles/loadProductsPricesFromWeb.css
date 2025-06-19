@@ -1,0 +1,38 @@
+.containerAll{
+    display: grid;
+    grid-template-rows: 90vh 7vh;
+}
+#listProductsModified{
+    overflow: scroll;
+}
+#listProductsModified::-webkit-scrollbar{
+    width: 4px;
+    height: 0;
+    background-color: transparent;
+}
+#listProductsModified::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+.headerProduct{
+    display: grid;
+    grid-template-columns: 1fr 20% 20%;
+    height: 50px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.detailedContent{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-left: 1px solid #ccc;
+}
+.detailedContent input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.showGrid{
+    display: grid;
+}

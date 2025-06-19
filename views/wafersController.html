@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obleas</title>
+    <link rel="stylesheet" href="../styles/wafersController.css">
+    <link rel="stylesheet" href="../styles/succesAlert.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+</head>
+<body>
+    <div id="reportStatus"></div>
+    <div class="containerAll">
+        <!-- controlador de seleccion de tablas -->
+        <div class="tablesContent">
+            <label for="tableSelected">Modificar orden de los valores del TXT</label>
+            <div class="selectSection">
+                <!-- seeccion de tabla -->
+                <select name="tableSelected" id="tableSelected">
+                    <option value="dataUser" selected>Usuario</option>
+                    <option value="dataCilinder">Cilindro</option>
+                    <option value="dataValve">Valvula</option>
+                    <option value="dataRegulator">Regulador</option>
+                </select>
+                <!-- abre la seccion de modificación -->
+                <button id="modifyOrder">Modificar</button>
+            </div>
+        </div>
+ 
+        <!-- seccion de modificacion del txt seleccionado -->
+        <div id="sectionModifyOrderTxt">
+            <h2>Modificar Orden de los datos en el TXT de <span id="nameTable"></span> </h2>
+            <div class="guideContent">
+                <strong>Nombre</strong>
+                <strong>posición en la <br> tabla del TXT</strong>
+            </div>
+            <!-- ubicacion de los resultados de las tablas -->
+            <div id="dataContent">
+
+            </div>
+
+            <!-- controlador de resultados -->
+            <div class="buttonController">
+                <button id="closeSettingsTxt">Cerrar</button>
+            </div>
+        </div>
+
+        <div class="exportController">
+            <label>Exportar obleas a Energas</label>
+            <button id="exportWafers">Exportar</button>
+        </div>
+
+        <!-- se ubican los datos del controlador -->
+        <div id="exportedDataDetailedContent">
+            <div class="guideContent">
+                <strong>Oblea Anterior</strong>
+                <strong>Dominio</strong>
+            </div>
+
+            <!-- contenedor  -->
+            <div id="wafersExporteds"></div>
+        </div>
+
+    </div>
+
+    <script type="module" src="../scripts/wafersController.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUEVO REMITO</title>
+    <link rel="stylesheet" href="../styles/newVoucher.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+</head>
+<body>
+    <div id="backBtnDiv"></div>
+    <div id="reportStatus"></div>
+    <div id="addNewSerial"></div>
+
+    <!-- ventana emergente para añadir series -->
+    <div class="addSerialController">
+        <input type="text" id="serialData">
+        <button id="cancelAddNewSerial">Cancelar</button>
+        <button id="createNewSerialController">Añadir</button>
+    </div>
+
+    <div class="headerVoucher">
+        <div class="dateInput">
+            <strong><span id="date"></span></strong>
+        </div>
+    </div>
+
+    <!-- contenedor del nombre de la cta cte y el boton KITS -->
+    <div class="headerContent">
+
+        <strong id="nameCtaCteSelected"></strong>
+
+        <div class="buttonContainer">
+            <button id="searchKit">KIT</button>
+        </div>
+    </div>
+
+    <!-- seccion la ventana emergente kits -->
+    <div class="kitContainer">
+        <div class="titleContainerKits">
+            <h3>Kits encontrados</h3>
+            <div class="containerGuideKit">
+                <strong>Nombre</strong>
+                <strong>Valor</strong>
+            </div>
+        </div>
+        <div id="kitContainerResults">
+            <!-- se ubican los resultados del kit -->
+        </div>
+        <button id="quitWindowKits">Cancelar</button>
+    </div>
+
+    <div class="bodyContent">
+        <div class="leftAndRightContent">
+            
+            <div class="left">
+                <div class="containerSearcher" id="containerSearcher">
+                    
+                    <!-- se ubica el seleccionador de productos -->
+                    <div class = "headerList">
+                        <input type="text" id="startSearchProd" placeholder = "Buscar . . ." >
+                        <select id="searchFor">
+                            <option select> NOMBRE </option>
+                            <option>CODIGO</option>
+                        </select>
+                    </div>
+
+                    <!-- contenedor de resultados del buscador -->
+                    <div id="searchContent" class="searchContent" >
+
+                        <!-- vista previa del producto antes de agregarse a la lista -->
+                        <div class="selectedProductContent">
+                            <strong class="dataPrduct" id="insideid"></strong>
+                            <strong class="dataPrduct" id="name"></strong>
+                            <strong class="dataPrduct" id="brand"></strong>
+                            <strong class="dataPrduct" id="finalvalue"></strong>
+                            <input  class="dataPrduct" type="number" id="ammount" value="1" >
+                            <button id="addProdList">+</button>
+                        </div>
+
+
+                        <!-- contenedor de resultados del buscador -->
+                        <div class="contentProducts" id = "contentProducts"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="alertContainer">
+                
+            </div>
+
+            <div class="right">
+                <div class="products">
+
+                    <div class="containerProductsAndSerial">
+                        <div class="leftContainer">
+                            <!-- guia del buscador -->
+                            <div class="guideProductSearcheds">
+                                <strong>Cod.</strong>
+                                <strong>Nombre</strong>
+                                <strong>Marca</strong>
+                                <strong>Valor</strong>
+                                <strong>Cantidad/Serie</strong>
+                                <strong>Parcial</strong>
+                            </div>
+                            <!-- contenedor de los productos -->
+                            <div class="listProducts" id="listProdContent"></div>
+
+                            
+                        </div>
+                        
+                        <!-- contenedor de las series -->
+                        <div class="generalSerials">
+                            <!-- buscador de series -->
+                            <div class="searchSerials">
+                                <input type="text" id="searchSerial" placeholder="Buscar . . .">
+                                <button id="createSerial">+</button>
+                            </div>
+
+                            <!-- contenedor de resultados de series -->
+                            <div id="resultOfSearch"></div>
+
+                            <!-- series por defecto -->
+                            <div class="SerialContainer" id="listSerial"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- contenedor del descuento y del total -->
+                    <div class="discountAndTotal">
+                        <div class="section">
+                            <label for="discount">DESCUENTO </label>
+                            <input type="number" name="discount" id="discount">                        
+                        </div>
+                        <div class="section">
+                            <strong>TOTAL : <samp id="totalValue">0</samp></strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="buttonController">
+            <button id="saveVoucher">GUARDAR REMITO</button>
+        </div>
+    </div>
+
+    <script src="../scripts/newVoucher.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 1%;
+    width: 98%;
+}
+
+.listWaferController{
+    display: grid;
+    margin: 2%;
+}
+.dateContainer{
+    width: 30px;
+}
+.dateContent{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 2% 0;
+}
+.dateContent input{
+    border-right: none;
+    width: 100%;
+    padding: 22% 0%;
+}
+.dateContainer label {
+    font-size: 13px;
+    font-weight: bolder;
+    position: absolute;
+    top: 7%;
+}
+#startSearch{
+    height: 100%;
+    width: 30px;
+    background: white;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-image: url("../img/lupa.png");
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#searchContent{
+    width: 16.6%;
+}
+.addWaferController{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 7%;
+    height: 31px;
+    margin-bottom: 8%;
+}
+
+#addRowToListWafer  , #modifyRowWafer{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: none;
+    margin-left: auto;
+    background-color: #bdbdbd;
+    cursor: pointer;
+}
+#modifyRowWafer  , #deleteRowWafer{
+    background-image: url("../img/save.png");
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+#deleteRowWafer{
+    background-image: url("../img/trashImg.png");
+    border: none;
+    cursor: pointer;
+    background-size: 47%;
+    background-position-y: 41%;
+}
+#listWafer{
+    width: 96%;
+    height: 55vh;
+    border: 1px solid #ccc;
+    margin: auto 2%;
+    overflow: scroll;
+}
+#listWafer::-webkit-scrollbar{
+    width: 4px;
+    height: 0px;
+    background-color: #ccc;
+}
+#listWafer::-webkit-scrollbar-thumb{
+    color: #333;
+}
+
+.rowOfWafer{
+    display: grid;
+    grid-template-columns: 17% 14% 22% 5% 20% 1fr 5% 5%;
+}
+.rowOfWafer input{
+    height: 31px;
+    padding: 0% 0% 0 5%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.succesBorderer{
+    border-right: 6px solid #3bc73b !important;
+}
+.dangerousBorderer{
+    border-right: 6px solid red !important;
+}
+#errorDateContent{
+    text-align: end;
+}
+.show{
+    display: flex !important;
+}
+#errorDateContent strong{
+    background-color: #b95e5e;
+    color: white;
+    padding: 0 2%;
+}
+.searchControllerWafer{
+    width: 96%;
+    height: 32px;
+    padding: 0% 2%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#searchContent{
+    height: 100%;
+    padding: 0% 1%;
+    width: 26%;
+    background: #333;
+    color: white;
+}
+#searchContent::placeholder{
+    color: white;
+}
+#resultsOfSearch{
+    position: absolute;
+    width: 96%;
+    height: 70%;
+    display: none;
+    flex-direction: column;
+    margin: auto 2%;
+    background: white;
+}
+.wafersNotBranded{
+    background-color: #ab6666;
+    color: white;
+}
+
+.meterOfPendingWafersContent,  .seeAllWaferFromTo{
+    width: 9%;
+    height: 100%;
+    background-color: #333;
+    font-size: 12px;
+    margin-right: 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Pecs</title>
+    <link rel="stylesheet" href="../styles/pecList.css">
+    <link rel="stylesheet" href="../styles/succesAlert.css">
+</head>
+<body>
+    <div id="reportStatus"></div>
+
+    <div class="containerAll">
+        <strong>Listado de Pecs</strong>
+
+        <div id="generalPecsContainer">
+
+            <!-- controlador para añadir un nuevo pec -->
+            <div id="newPecController">
+                <input type="number" id="pecNumberUser" placeholder="Añadir . . ." >
+                <button id="addNewPec">+</button>
+            </div>
+
+            <!-- buscador -->
+            <div class="searchContent">
+                <input type="number" id="startSearchPec" placeholder="Buscar . . .">
+            </div>
+
+            <!-- contenedor para los resultados de busqueda -->
+            <div id="resultOfSearchContainer"></div>
+
+            <!-- pec por defecto -->
+            <div id="defaultPecList"></div>
+        </div>
+
+    </div>
+
+    <script src="../scripts/pecList.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.containerAll{
+    display: grid;
+    grid-template-columns: 1fr 30%;
+}
+.formCilinder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#dataForUser{
+    font-size: 17px;
+}
+.infoContent{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.5% 0%;
+    margin: 1% 0%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: var(--bgColor, white);
+    transition: all 200ms;
+}
+.infoContent:hover{
+    --bgColor : #ededed;
+}
+.infoContent label {
+    text-transform: capitalize;
+    margin-left: 4%;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--bgColor , white);
+    transition: all 200ms;
+    cursor: pointer;
+}
+.infoContent input::placeholder{
+    color: #d1d1d1;
+    font-weight: lighter;
+    font-size: 12px;
+    font-style: oblique;
+    letter-spacing: 2px;
+    background-color: var(--bgColor , white);
+    transition: all 200ms;
+}
+.infoContent input , select {
+    outline: none;
+    border: none;
+    width: 96%;
+    padding: 0;
+    margin-left: 4%;
+    background-color: var(--bgColor , white);
+    transition: all 200ms;
+    cursor: pointer;
+}
+#idType{
+    font-size: 13px;
+    font-weight: bold;
+}
+.buttonConttroller{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 8% 0% 0px 0px;
+}
+.buttonConttroller button {
+    border: none;
+    background: rgb(115, 115, 184);
+    color: white;
+    cursor: pointer;
+    padding: 2% 7%;
+}
+.labelAndMore{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#searcherContentInfo{
+    display: none;
+}
+.contentResults{
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 2%;
+    position: relative;
+}
+.contentResults:hover {
+    background-color: #c5c3c3;
+}
+.contentResults input[type="checkbox"]{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -3px;
+    left: -4px;
+    opacity: 0;
+}
+.infoContent .labelAndMore .addCountry{
+    display: none;
+    background-color: #939393;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin-top: 0px;
+    cursor: pointer;
+    border: none;
+    justify-content: center;
+}

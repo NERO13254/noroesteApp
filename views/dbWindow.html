@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VER DB</title>
+    <link rel="stylesheet" href="../styles/dbWindow.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+</head>
+<body>
+    <div id="reportStatus"></div>
+    <div class="containerAll">
+        <!-- contenedor de busqueda -->
+        <div class="searchResults">
+            <input type="text" placeholder='Buscar . . .' id="searchDataInDb">
+        </div>
+
+        <!-- contenedor global de resultados -->
+        <div id="globalResults">
+            <!-- contenedor de guia de datos -->
+             <div id="guideContent"></div>
+            <!-- contenedor de resultados de busqueda -->
+            <div id="searchedResults"></div>
+            <!-- contenedor de resultados por defecto -->
+            <div id="defaultResults"></div>
+        </div>
+
+        <!-- contenedor de tablas -->
+        <div id="tableContents"></div>
+        <!-- limitador de resultados -->
+        <div class="limiterResults">
+            <label for="limiterResultsInput">Resulados limitados :</label>
+            <select name="limiterResultsInput" id="limiterResultsInput">
+                <option value="10" selected>Ultimos 10</option>
+                <option value="50" >Ultimos 50</option>
+                <option value="100">Ultimos 100</option>
+                <option value="1000000">Todos los registros (puede tardar)</option>
+            </select>
+        </div>
+    </div>
+    
+    
+    <script src="../scripts/dbWindow.js"></script>
+</body>
+</html>

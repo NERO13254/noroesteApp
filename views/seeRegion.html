@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VER PROVINCIAS</title>
+    <link rel="stylesheet" href="../styles/seeRegion.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+    <link rel="stylesheet" href="../styles/succesAlert.css">
+</head>
+<body>
+
+    <div id="backBtn"></div>
+    <div id="reportStatus"></div>
+
+
+    <div class="titleContent">
+        <h2>PROVINCIAS CARGADAS</h2>
+    </div>
+
+    <!-- controlador del buscador -->
+    <div class="searcherContent">
+        <input type="text" id="searchProvince" placeholder="Buscar . . .">
+        <button id="newProvince">Nueva Provincia</button>
+    </div>
+
+    <div id="allResults">
+        <!-- resultados del buscador -->
+        <div id="seachResults"></div>
+
+        <!-- listado de provincias por defecto -->
+        <div id="listRegionsLoaded"></div>
+    </div>
+
+    <!-- contenedor de opciones -->
+    <div id="modifySecttion">
+
+        <div class="modifySection">
+            <label for="name">Nombre de la Provincia</label>
+            <strong id="idProvince"></strong>
+            <input type="text" id="name" placeholder="Nombre . . .">
+        </div>
+
+        <div class="buttonControllerModifySection">
+            <button id="cancelSetting">Cancelar</button>
+            <button id="deleteProvince">Borrar Provincia</button>
+            <button id="updateProvince">Guardar</button>
+            <button id="insertProvince">Crear</button>
+        </div>
+    </div>
+
+    <script src="../scripts/seeRegion.js"></script>
+</body>
+</html>

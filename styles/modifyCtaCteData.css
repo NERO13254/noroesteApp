@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.titleContent{
+    width: 90%;
+    margin: 0% auto 7%;
+    text-align: center;
+}
+.inputContainer{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.inputContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5%;
+}
+.inputContent input{
+    width: 200px;
+}
+.buttonController{
+    margin-top: 13vh;
+    display: flex;
+    justify-content: space-between;
+}
+.buttonController button{
+    background-color: rgb(115, 115, 184);
+    font-size: 13px;
+    color: white;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: 0.5em;
+    max-height: 37px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

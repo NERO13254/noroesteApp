@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDM GUARDADOS</title>
+    <link rel="stylesheet" href="../styles/seeTdmSaved.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+</head>
+<body> 
+    <div id="backBtnContent"></div>
+    <div class="headerContent">
+        <div class="titleContent">
+            <h2>TDM GUARDADOS</h2>
+        </div>
+
+        <div class="searcher">
+            <input type="text" id="searchInput" onkeyup="startSearch(event)" placeholder="BUSCAR TDM . . .">
+        </div>
+    </div>
+
+    <div class="bodyContent" id="bodyContent">
+        <div id="guideContent">
+            
+        </div>
+        <div class="searcherResults" id="searcherResults">
+            <!-- ACA SE IMPIMEN LOS RESULTADOS DEL BUSCADOR -->
+        </div>
+
+        <div class="getTdm"  id="getTdm">
+            <!-- ACA SE IMPRIMEN TODS LOS TDM DE LA BASE DE DATOS -->
+        </div>
+    </div>
+    <script src="../scripts/seeTdmSaved.js"></script>
+</body>
+</html>

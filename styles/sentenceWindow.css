@@ -1,0 +1,47 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.titleContent{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 7%;
+}
+.checkContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 71vh
+}
+.opContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    align-items: center;
+}
+.opContainer input {
+    width: 31%;
+    height: 100%;
+    max-height: 20px;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    padding: 1%;
+    margin-top: 0px;
+}
+.buttonController{
+    display: flex;
+    justify-content: space-around;
+}
+.buttonController button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(115, 115, 184);
+    font-size: 13px;
+    color: white;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: .5em;
+}

@@ -1,0 +1,113 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+.headerContent{
+    display: flex;
+    justify-content: space-between;
+}
+#generalListResults{
+    width: 100%;
+    height: 85vh;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.guideContent,.elementContent{
+    display: grid;
+    grid-template-columns: 30% 1fr 13% 13% 4% 4%;
+    text-align: center;
+}
+.elementContent{
+    align-items: center;
+    outline: 1px solid #ccc;
+    overflow: hidden;
+}
+.elementContent p , .elementContent strong{
+    height: 55px;
+    width: 88%;
+    margin: 0;
+    display: flex;
+    border-right: 1px solid #ccc;
+    align-items: center;
+    text-align: left;
+    padding: 5% 4%;
+}
+.elementContent button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.elementContent .modifyElement{
+    background-image: url("../img/save.png");
+}
+.elementContent .deleteElement{
+    background-image: url("../img/trashImg.png");
+    background-size: 20px;
+}
+#createOrModifyElement{
+    position: fixed;
+    left: 1%;
+    top: 7%;
+    width: 98%;
+    height: 83vh;
+    background: #333;
+    color: white;
+    display: none;
+    grid-template-rows: 15% 15% 15% 15% 1fr;
+}
+
+.attributeContent{
+    display: grid;
+    width: 35%;
+    align-items: flex-start;
+    grid-template-rows: 35% 1fr;
+    display: grid;
+    width: 35%;
+    align-items: flex-start;
+    grid-template-rows: 35% 1fr;
+    padding: 0 2%;
+}
+.buttonController{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 34%;
+    padding: 2%;
+}
+.gridShow{
+    display: grid !important;
+}
+#createElement{
+    padding: .5% 5%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+#defaultResults{
+    overflow: scroll;
+    height: 100%;
+}
+
+#defaultResults::-webkit-scrollbar,#resultsOfSearch::-webkit-scrollbar {
+    background-color: white;
+    height: 0px;
+    width: 4px;
+}
+#defaultResults::-webkit-scrollbar-thumb ,  #resultsOfSearch::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+#resultsOfSearch{
+    display: none;
+    position: absolute;
+    background: white;
+    width: 98%;
+    overflow: scroll;
+    height: 85%;
+}

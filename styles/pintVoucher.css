@@ -1,0 +1,51 @@
+.headerContent{
+    display: grid;
+    grid-template-columns: 10% 3fr 1fr;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.titleDiv h2 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.date, #hoursAndMinutes, #fullData {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.clientName{
+    display: flex;
+    justify-content: space-around;
+    width: 43%;
+    font-size: 13px;
+}
+.clientName p {
+    margin: 0;
+}
+.reference{
+    display: grid;
+    grid-template-columns: 13% 2fr 20% 11%;
+}
+.contentProduct{
+    display: grid;
+    grid-template-columns: 13% 4fr 19% 11% 1fr;
+    font-size: 12px;
+    margin-bottom: 1%;
+}
+.discountContainer{
+    width: 27%;
+    margin-left: auto;
+}
+.discountContainer p{
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    padding: 0px;
+    margin: 2% 0%;
+    font-size: 14px;
+}
+.productContent{
+    border-bottom: 1px solid black;
+}

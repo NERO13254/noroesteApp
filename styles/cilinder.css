@@ -1,0 +1,29 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.alertContent{
+    width: 55%;
+    background: red;
+    color: white;
+    padding: 1%;
+    margin: 1% 0;
+}
+#defaultCharge{
+    height: 70vh;
+    overflow: scroll;
+    border: 1px solid #ccc;
+}
+.cilinderContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 1% 0;
+}
+.reference{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 1% 0;
+}

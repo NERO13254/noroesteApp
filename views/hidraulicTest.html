@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARGAR PH</title>
+    <link rel="stylesheet" href="../styles/hidraulicTest.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+</head>
+<body>
+    <div id="backBtn"></div>
+    <div id="alertContent"></div>
+    
+    <div class="containerAll">
+        <div class="searcher">
+            <!-- buscador de tdm -->
+            <input type="text" id="searcherInput" placeholder="BUSCAR TDM . . .">
+
+            <!-- buscador de cilindros -->
+            <div class="cntrollerSearcher">
+                <input type="text" id="inputSerialCilinder" placeholder="BUSCAR CLNDRO NºSERIE ">
+                <button id="startSearchCilinder">BUSCAR</button>
+            </div>
+
+            <div id="searcherContainerResults">
+
+                <div class="cilinderListContent" id="cilinderListContent">
+                    <!-- SE UBICAN LOS RESULTADOS DE BUSQUEDA PARA TODOS LOS CILINDRS -->
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- lista general de todos los TDM -->
+        <div class="container-list" id="allTdmContent">
+
+            <div id="searcherContentInfo">
+                <!-- se encuentran los TDM buscados -->
+            </div>
+
+            <div class="userListContent"  id="userListContent">
+                <!-- se ubican los TDM por defecto -->
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="../scripts/hidraulicTest.js"></script>
+</body>
+</html>

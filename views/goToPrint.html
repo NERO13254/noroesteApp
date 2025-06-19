@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPRESION</title>
+    <link rel="stylesheet" href="../styles/goToPrint.css">
+</head>
+<body>
+    <header>
+        <div class="titleContent">
+            <h2>DETALLE CUENTA CORRIENTE</h2>
+        </div>
+
+        <div class="dataClient">
+            <div class="clientStrong">
+                <strong>CODIGO DE CLIENTE : <span id="clientCode"> </span> </strong>
+                <strong id="nameClient"> </strong>
+            </div>
+            <div class="dataStrong">
+                <strong id="allDate"></strong>
+                <strong id="hourDay"></strong>
+            </div>
+        </div>
+
+        <div class="totalAmmount">
+            <strong>SALDO TOTAL : <span id="totalAmount"></span> </strong>
+        </div>
+
+        <button  class="no-print" onclick="printHtml()">IMPRIMIR</button>
+    </header>
+    <hr>
+
+
+    <div class="bodyContent">
+        <div class="rowGuide">
+            <strong>Num. Fac.</strong>
+            <strong>Fecha</strong>
+            <strong>Descripcion</strong>
+            <strong>Debe</strong>
+            <strong>haber</strong>
+        </div>
+        <div class="rowContent" id="rowContent">
+
+        </div>
+    </div>
+    <script src="../scripts/goToPrint.js"></script>
+</body>
+</html>

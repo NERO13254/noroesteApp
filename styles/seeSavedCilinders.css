@@ -1,0 +1,136 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.grey{
+    background-color: #ccc !important;
+}
+.changeBG{
+    background-color: #ccc  !important;
+}
+.ligthGrey{
+    background-color: rgb(237, 237, 237); 
+}
+.dispel{
+    display: flex !important;
+}
+.cilinderListContent{
+    height: 78vh;
+    overflow: scroll;
+}
+.contentInput , #searchResults div , .contentInputWafer{
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    position: relative;
+    height: 29px;
+    text-transform: uppercase;
+}
+.contentInputWafer{
+    grid-template-columns: 10% 30% 30% 1fr;
+}
+.contentInput strong  , .contentInputWafer strong{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-weight: 600;
+    font-size: 13px;
+}
+.contentInput input  , #searchResults div input , .contentInputWafer input{
+    position: absolute;
+    width: 99%;
+    height: 100%;
+    left: 0;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkPut {
+    background-color: #dfdfdf;
+}
+#cilinderListContent{
+    height: 70vh;
+    overflow: scroll;
+    text-transform: uppercase;
+}
+#cilinderListContent::-webkit-scrollbar , #searchResults::-webkit-scrollbar{
+    width: 4px;
+    height: 0;
+    background-color: transparent;
+}
+#cilinderListContent::-webkit-scrollbar-thumb,#searchResults::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+.buttonContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+.buttonContent button {
+    font-size: 13px;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: 0.5em;
+    background: transparent;
+}
+.buttonContent button:hover{
+    background-color: #333;
+    color: white;
+}
+#searchResults{
+    display: none;
+    position: absolute;
+    background: white;
+    z-index: 2;
+    width: 98%;
+    border: 1px solid #ccc;
+    overflow: scroll;
+    height: 70vh;
+}
+.errorPrinted{
+    background-color: red;
+    color: white;
+    padding: 0 5%;
+}
+.containerButtons{
+    position: relative;
+}
+.selectSavedData{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.selectSavedData button{
+    border: 1px solid #ccc;
+    padding: 2%;
+    cursor: pointer;
+}
+#seeCilinders{
+    border-right: 0px;
+    background-color: rgb(255, 255, 255);
+}
+.buttonWaferContent{
+    display: none;
+}
+.searchCils input{
+    width: 50%;
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-bottom: none;
+}
+#cilinderGuideContent{
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-top: none;
+}
+#cilinderGuideContent , #waferGuideContent{
+    font-size: 13px;
+}
+.waferGuideContent{
+    display: none;
+    grid-template-columns: 10% 30% 30% 1fr;
+}

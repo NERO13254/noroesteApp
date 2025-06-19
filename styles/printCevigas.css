@@ -1,0 +1,27 @@
+body{
+    height: 200vh;
+}
+
+strong{
+    position: absolute;
+}
+
+@media print {
+    @page {
+        margin: 0; /* Elimina márgenes de la página */
+        width: 100%;
+        height: 100vh;
+    }
+    #printButton, #saveChanges {
+        display: none;
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+        margin: 0; /* Elimina márgenes del cuerpo */
+        padding: 0; /* Elimina el relleno */
+    } 
+}
+*{
+text-transform : uppercase
+}

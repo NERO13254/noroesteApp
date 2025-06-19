@@ -1,0 +1,128 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+.row1 , .row2{
+    border: 1px solid #ccc;
+    padding: 1%;
+}
+.inputContentRow1{
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+}
+.labelContent{
+    font-size: 12px;
+    font-weight: bold;
+}
+.inputsDataVehicleContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.divContentModel{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    margin-bottom: 1%;
+    justify-content: center;
+}
+.operationsContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.selectContainer{
+    display: grid;
+    grid-template-columns: 59% 18%;
+    align-items: center;
+}
+#contentInputs{
+    width: 100%;
+}
+.inputContentCheckBox{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    margin: 1%;
+    border-radius: 5px;
+}
+.inputContentCheckBox input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#optionContainerSelect{
+    grid-template-columns: 1fr 1fr;
+}
+.personData{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.inputContentRow3{
+    display: grid;
+    grid-template-columns: 53%;
+}
+.regulatorData{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+}
+.dateReg{
+    display: grid;
+    grid-template-columns: 90%;
+    align-items: center;
+}
+.ammountCilindersContent{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
+.cilinderInputContent{
+    display: grid;
+    grid-template-columns: 15% 21% 11% 18% 14% 13% 8%;
+}
+.inputsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputsContainer input{
+    width: 80%;
+}
+#dateContent{
+    justify-content: space-evenly;
+}
+#dateContent input{
+    width: 17%;
+}
+.inputContentCheckBox input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.containerGuide{
+    display: grid;
+    grid-template-columns: 13% 22% 6% 6% 8% 8% 9% 6% 13% 9%;
+    text-align: center;
+    font-size: 12px;
+}
+.row6{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5%;
+}
+.row6 button{
+    padding: 1%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}

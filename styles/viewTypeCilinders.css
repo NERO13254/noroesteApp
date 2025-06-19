@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.titleContent{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 6%;
+}
+.searcherContent{
+    display: grid;
+    width: 300px;
+    grid-template-columns: 1fr;
+    border: 1px solid #ccc;
+}
+.searcherContent input , select {
+    border: none;
+    text-transform: uppercase;
+}
+.typeCilindersContent{
+    display: block;
+    height: 72vh;
+    overflow: scroll;
+    position: relative;
+}
+.typeCilindersContent::-webkit-scrollbar{
+    width: 4px;
+    height: 0px;
+    background-color: transparent;
+}
+.typeCilindersContent::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+#contentSearched{
+    position: absolute;
+    z-index: 1;
+}
+.references{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.controllerButton button{
+    font-size: 13px;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: 1em;
+}
+.cilContainer{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 30px;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    position: relative;
+}
+.cilContainer strong{
+    font-weight: 600;
+}
+.cilContainer input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+#resultsOfSearch{
+    display: none;
+    width: 98%;
+    height: 72vh;
+    position: fixed;
+    background: white;
+    z-index: 2;
+}
+.specificDataCilinder{
+    display: none;
+    position: fixed;
+    top: 18%;
+    width: 98%;
+    height: 79vh;
+    z-index: 3;
+    background: #333;
+    color: white;
+    grid-template-rows: 1fr 6%;
+}
+#inputContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.speciicInputContent {
+    display: grid;
+    width: 80%;
+    grid-template-rows: 38% 1fr;
+}
+.speciicInputContent input {
+    height: 13px;
+    background: transparent;
+    border: none;
+    color: white;
+}
+.buttonController{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

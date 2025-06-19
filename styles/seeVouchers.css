@@ -1,0 +1,29 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.searchContent{
+    position: fixed;
+    left: 8%;
+    top: 15%;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: white;
+    padding: 0% 2%;
+}
+#searchVoucherInput{
+    border: 1px solid #ccc;
+    padding: .8%;
+    outline: none;
+}
+.containerSearchController button{
+    background: #3F51B5;
+    color: white;
+    border: none;
+    padding: 1%;
+    cursor: pointer;
+}

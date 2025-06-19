@@ -1,0 +1,146 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #ccc;
+}
+.headerContent{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 4%;
+}
+*{
+text-transform:uppercase
+}
+.title h2{
+    font-size: 20px;
+}
+.cilinderData{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.left{
+    text-align: end;
+}
+.left .info{
+    display: flex;
+}
+.info{
+    margin-bottom: 31%;
+}
+.info strong{
+    display: block;
+}
+#insideId{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.threadSatus{
+    width: 90%;
+    margin: auto;
+    margin-top: -2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.percentContainer{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+}
+.ovalatizacion{
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+}
+.ovalatizacion h2{
+    font-size: 18px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+.medition{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+.medition strong {
+    border: 1px solid #ccc;
+}
+.temp {
+    width: 90%;
+    margin: auto;
+}
+.expansin{
+    width: 90%;
+    margin: auto auto 5%;
+    display: grid;
+    grid-template-columns: 2fr 51% 16%;
+    align-items: flex-start;
+    
+}
+.contA , .cont{
+    display: grid;
+    grid-template-columns: 8fr 2fr 10% 10% 10% 10% 10%;
+    width: 90%;
+    margin: auto;
+    text-align: end;
+    border: 1px solid #ccc;
+    height: 57px;
+    text-align: center;
+}
+.cont{
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.contA strong, .cont strong{
+    border-right: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contA p , .cont p {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ccc;
+}
+.obs{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.imgContent{
+    width: 150px;
+    height: 150px;
+}
+.imgContent img {
+    width: 100%;
+    height: 100%;
+}
+.textContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#obsContent{
+    font-size: 15px;
+    font-weight: 600;
+}

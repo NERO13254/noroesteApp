@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODIFICAR TDM</title>
+    <link rel="stylesheet" href="../styles/modifyTdm.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+    <link rel="stylesheet" href="../styles/succesAlert.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+</head>
+<body>
+    <div id="backBtnContent"></div>
+    <div id="alertContainer"></div>
+
+    <div class="titleConent">
+        <h2>modificar tdm : <strong id="referenceName"></strong> </h2>
+    </div>
+
+    <div class="bodyCntent">
+        <div class="inputContent">
+            <label for="workshop">Taller</label>
+            <input type="text" class="inputContentData" id="workshop">
+        </div>
+        <div class="inputContent">
+            <label for="workshopcode">Codigo De Taller</label>
+            <input type="text" class="inputContentData" id="workshopcode">
+        </div>
+        <div class="inputContent">
+            <button>PEC</button>
+        </div>
+        <div class="inputContent">
+            <label for="cuit">Cuit</label>
+            <input type="text" class="inputContentData" id="cuit">
+        </div>
+        <div class="inputContent">
+            <label for="iva">Iva</label>
+            <input type="text" class="inputContentData" id="iva">
+        </div>
+        <div class="inputContent">
+            <label for="location">Localidad</label>
+            <input type="text" class="inputContentData" id="location">
+        </div>
+        <div class="inputContent">
+            <label for="country">Provincia</label>
+            <input type="text" class="inputContentData" id="country">
+        </div>
+        <div class="inputContent">
+            <label for="phone">Telefono</label>
+            <input type="number" class="inputContentData" id="phone">
+        </div>
+        <div class="inputContent">
+            <label for="mail">Mail</label>
+            <input type="email" class="inputContentData" id="mail">
+        </div>
+    </div>
+
+    <div class="buttonController">
+        <button id="deleteTdm">Eliminar</button>
+        <button id="saveTdm">Guardar</button>
+    </div>
+
+    <!-- contenedor general de los pec -->
+    <div id="pecController">
+        <div class="addNewPec">
+            <input type="text" id="startSearch" placeholder="Añadir pec . . .">
+            <div id="resultsPecContent"></div>
+        </div>
+        <div class="pecGuide">
+            <strong>Pec</strong>
+        </div>
+        <!-- se ubican los pec -->
+        <div id="pecContent"></div>
+
+        <!-- botones -->
+        <div class="buttonController">
+            <button>Cancelar</button>
+        </div>
+    </div>
+
+    <script src="../scripts/modifyTdm.js"></script>
+</body>
+</html>

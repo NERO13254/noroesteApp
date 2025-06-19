@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARGAR DATOS DEL CILINDRO</title>
+    <link rel="stylesheet" href="../styles/loadCilinderData.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+</head>
+<body>
+    <div id="reportStatusContent"></div>
+    <div class="inputContainerAll">
+        <div id="containerTopInputs">
+            <div class="inputContent">
+                <label for="codeO">CODIGO DE HOMOLOGACION</label>
+                <input type="text" class="dataCil" name="omologation" id="codeO" placeholder="ER32 . . ." maxlength="4">
+            </div>
+            <div class="inputContent">
+                <label for="dateFab">fecha de fabricacion</label>
+                <div class="inputsContent">
+                    <div class="dateInputContent">
+                        <strong>Mes</strong>
+                        <input type="number" class="dataCil" name="dataCil_fabMonth" id="dateFab" placeholder="Mes . . ."  oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);">
+                    </div>
+                    <div class="dateInputContent">
+                        <strong>Año</strong>
+                        <input type="number" class="dataCil" name="dataCil_fabYear" id="dateFabYear" placeholder="Año . . ."  oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);" >           
+                    </div>
+                </div>
+            </div>
+            <div class="inputContent">
+                <label for="lastCrpc">ultimo crpc</label>
+                <div class="inputsContent">
+                    <div class="dateInputContent">
+                        <strong>Mes</strong>
+                        <input type="number" class="dataCil" name="dataCil_crpMonth" id="lastCrpc"     placeholder="Mes . . ."  oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);">
+                    </div>
+                    <div class="dateInputContent">
+                        <strong>Año</strong>
+                        <input type="number" class="dataCil" name="dataCil_crpYear" id="lastCrpcYear" placeholder="Año . . ."  oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);" >
+                    </div>
+                </div>
+            </div>
+            <div class="inputContent">
+                <label for="serialNumber">NUMERO DE SERIE</label>
+                <input type="text" class="dataCil" name="serialnumber" id="serialNumber" placeholder="MA9383 . . .">
+            </div>
+            <div class="inputContent">
+                <label for="tara">TARA</label>
+                <input type="text" name="taramedido" class="dataCil" id="tara" placeholder="60.4 . . .">
+            </div>
+            <div class="inputContent">
+                <label for="vol">VOL</label>
+                <input type="text" class="dataCil" name="volmedido" id="vol" placeholder="40.2 . . .">
+            </div>
+        </div>
+        <hr>
+        <div class="dataOfTheCilinder">
+            <div class="inputContent">
+                <label for="case">CASO</label>
+                <select name="case" id="case">
+                    <option value="periodicRevison" selected>REVISION PERIODICA</option>
+                    <option value="reinstalation">REINSTALACION</option>
+                    <option value="crash">CHOQUE</option>
+                    <option value="fire">INCENDIO</option>
+                </select>
+            </div>
+            <div class="inputContent">
+                <label for="brand">MARCA</label>
+                <input type="text" class="dataCil" name="brand" id="brand">
+            </div>
+            <div class="inputContent">
+                <label for="capacity">CAPACIDAD</label>
+                <input type="text" class="dataCil" name="capacity" id="capacity">
+            </div>
+
+            <div class="inputContent">
+                <label for="diametter">DIAMETRO NOM</label>
+                <input type="text" class="dataCil" name="diametronominal" id="diametter">
+            </div>
+
+            <div class="inputContent">
+                <label for="widthCil">LARGO NOM</label>
+                <input type="text" name="width" class="dataCil" id="width">
+            </div>
+
+        </div>  
+        <div class="inputContent">
+            <label for="pec">pec</label>
+            <select name="pec" class="dataCil" id="pec"></select>
+        </div>
+        <div class="inputContent">
+            <label for="img">IMG</label>
+            <div class="dataCilinder">
+                <input type="file" name="img" id="addImg" placeholder="IMAGEN">
+
+                <div class="inputContentCilInfo">
+                    <label for="rules">REGLAMENTACION </label>
+                    <strong id="rules" name="rulefab" class="dataCil"></strong>
+                    <label for="thikness">ESPESOR</label>
+                    <strong id="thikness"> </strong>
+                    <label for="coeficent">COEFICIENTE</label>
+                    <strong  id="coficent" name="coeficent" class="dataCil"></strong>
+                    <label for="maxExpansion">EXP MAXIMA</label>
+                    <strong id="maxexpansion"   name="expansiontotal" class="dataCil" ></strong>
+                    <label for="totalExpansion" >EXP PERMANENTE</label>
+                    <strong id="totalexpansion" name="expansionpermanente" class="dataCil"></strong>
+                </div>
+            </div>
+            
+        </div>          
+        <div class="inputContent">
+            <label for="obs">OBSERVACIONES</label>
+            <input name="obs" class="dataCil" id="obs" ></input>
+        </div>
+    </div>
+
+    <div class="buttonController" id="buttonController">
+        <button id="quitLoadCil">ANTERIOR</button>
+        <div class="autoFillContent" id="autoFillContent">
+            <strong id="faceBtn">:I</strong>
+            <input type="checkbox" id="autoFill" value="autoFill"> 
+         </div>
+    
+
+         <div class="nextOrSave"  id="nextOrSave">
+            <!-- ACA SE UBICAN LOS BOTONES DE SIGUIENTE O GUARDAR -->
+            <button id="autoFillbtn"></button>
+         </div>
+        
+        
+    </div>
+
+    <script src="../scripts/loadCilinderData.js"></script>
+</body>
+</html>

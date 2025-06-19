@@ -1,0 +1,231 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+button{
+    cursor: pointer;
+}
+.containerAll{
+    display: grid;
+    grid-template-rows: 89vh 1fr;
+}
+.sectionConten{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.formCilinderDataUser , .formCilinderData{
+    margin: 0px auto;
+    width: 80%;
+}
+.formCilinder{
+    display: grid;
+}
+.infoContent{
+    display: grid;
+    min-height: 40px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+.dataClient , .dataCil  , .dataCilInput  , .formCilinderDataUser .dataGeted , .formCilinderData .dataGeted{
+    border: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.inputContent {
+    display: grid;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top: none;
+}
+.inputContent label{
+    font-weight: bold;
+    font-size: 10px;
+}
+.inputContent strong{
+    font-weight: 400;
+    font-size: 16px;
+}
+.controllerData{
+    width: 80.5%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-bottom: none;
+    display: grid;
+    grid-template-columns: 1fr 9%;
+}
+.controllerData strong{
+    font-size: 15px;
+    font-weight: 500;
+}
+.controllerData button{
+    border: none;
+}
+#obs{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+#dataCrpc {
+    grid-template-columns: 1fr 1fr;
+}
+#dateFab,#lastCrpc{
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.buttonContent{
+    display: flex;
+    width: 90%;
+    justify-content: end;
+    margin: auto;
+}
+.buttonContent button{
+    margin-left: 7%;
+}
+.resultsContent{
+    position: absolute;
+    background: white;
+    width: 40%;
+}
+.contentResults {
+    height: 30px;
+    display: grid;
+    grid-template-columns: 83% 1fr;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-right: none;
+}
+.resultsContent{
+    display: block;
+    position: absolute;
+    background: white;
+    width: 39%;
+}
+.contentResults input{
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+}
+#faceBtn{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.autoFillContent{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.autoFillContent input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.specificCilnderAllDataContent{
+    position: fixed;
+    width: 100%;
+    height: 89vh;
+    overflow: scroll;
+    background: white;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+}
+.specificCilnderAllDataContent input, .specificCilnderAllDataContent textarea{
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.specificCilnderAllDataContent label{
+    font-size: 11px;
+    font-weight: 700;
+}
+.longitudinales , .ojivaSection , .fondoComun , .diametersContentInputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h2, h3{
+    margin: 0;
+    font-size: 18px;
+}
+.bodyLeft , .bodyRight{
+    border: 1px solid #ccc;
+}
+.bodyRight{
+    border-left: none;
+}
+.contentTestInput .diamInpts {
+    display: grid;
+    grid-template-columns: 1fr 53%;
+    margin: 9% 0;
+}
+.obsContent .dataGeted{
+    width: 99%;
+    height: 54px;
+    border-left: none;
+    border-bottom: none !important;
+    border-right: none;
+}
+#sepecificDataCil{
+    grid-template-columns: 60% 1fr;
+}
+.dataCilinder{
+    position: relative;
+}
+.dataCilinder button{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#addImg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+.specificData{
+    border-bottom: 1px solid #ccc;
+    display: grid;
+    height: 35px;
+}
+.showGrid{
+    display: grid !important;
+}
+
+.workshopData{
+    border: 1px solid #ccc;
+    display: grid;
+}
+.workshopData p{
+    margin: 0;
+    margin-top: 25vh;
+}
+.workshopData p , .workshopData strong{
+    font-size: 15px;
+    font-weight: 600;
+}
+#condenatedCilinder{
+    display: none;
+}
+#omologationContent{
+    grid-template-columns: 1fr 16%;
+}
+#omologationContent button{
+    border: none;
+    height: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg,green -11% , #ffc703 30% ,#1b74e9 92%, red 2%);
+}

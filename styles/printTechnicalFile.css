@@ -1,0 +1,63 @@
+.valvContainer{
+    margin-bottom: 1%;
+    width: 23%;
+    display: grid;
+    grid-template-columns: 35% 48%;
+}
+*{
+text-transform:uppercase
+}
+.conteinerValv{
+    margin-bottom: 1%;
+    width: 23%;
+    display: grid;
+    grid-template-columns: 35% 48%;
+}
+.vlavsContent{
+    width: 93%;
+    position: absolute;
+    top: 500px;display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.containerDivisCils{
+    width: 144%;
+    display: grid;
+    grid-template-columns: 71% 57%;
+    text-align: end;
+    margin-top: 5.5%;
+}
+.serialNumCils{
+    margin-bottom: 15%;
+}
+.cilinders{
+    width: 14%;
+    display: grid;
+    grid-template-columns: 75% 62%;
+    text-align: end;
+    margin-top: 4.5%;
+}
+.regulator{
+    display: grid;
+    margin-top: 6%;
+    grid-template-columns: 34% 27% 20%;
+    width: 67%;
+    text-align: end;
+}
+
+ @media print {
+    /* Estilos para impresión */
+    @page {
+        margin: 0; /* Elimina márgenes de la página */
+    }
+    body {
+        margin: 0; /* Elimina márgenes del cuerpo */
+        padding: 0; /* Elimina el relleno */
+    }
+    #printTechnicalFile {
+        display: none;
+    }
+}
+

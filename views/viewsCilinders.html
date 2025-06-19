@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipos de cilindos</title>
+    <link rel="stylesheet" href="../styles/viewTypeCilinders.css">
+    <link rel="stylesheet" href="../styles/succesAlert.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+</head>
+<body>
+    <!-- contenedor de alerta exito -->
+    <div id="succesAlert"></div>
+    <!-- contendor de alerta -->
+    <div id="reportStatus"></div>
+    <div id="backElement"></div>
+
+
+    <div class="headerContent">
+        <div class="titleContent">
+           <h2>TIPOS DE CILINDROS</h2> 
+        </div>
+        
+        <div class="searcherContent">
+            <input type="text" name="searchCilinder" id="searchCilinder" placeholder="Buscar por codigo. . .">
+        </div>
+
+    </div>
+
+    <div class="references">
+        <strong>COD</strong>
+        <strong>MARCA</strong>
+        <strong>Matricula</strong>
+        <strong>Modelo</strong>
+    </div>
+
+    <div class="typeCilindersContent" id="typeCilindersContent">
+
+        <!-- resultados del buscador de cilindros -->
+        <div id="resultsOfSearch"></div>
+
+        <div id="contentSearched">
+            <!-- ACA SE CARGAN TODOS LOS CILINDROS QUE PROVIENEN DE LA BASE DE DATOS -->
+        </div>
+    </div>
+
+    <div class="controllerButton">
+        <button id="chargeNweClilinder">Nuevo </button>
+    </div>
+
+    <div id="specificDataCilinder" class="specificDataCilinder">
+        <div id="inputContent"></div>
+
+        <div class="buttonController">
+            <button id="cancelModification">Cancelar</button>
+            <button id="removeCilinder">Eliminar</button>
+            <button id="saveModified">Guardar</button>
+        </div>
+    </div>
+
+    <script src="../scripts/viewCilinders.js"></script>
+</body>
+</html>

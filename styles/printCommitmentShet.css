@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+*::-webkit-scrollbar{
+    width: 4px;
+    height: 0;
+    background-color: #ccc;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+
+.headerContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.rigthContentHeader1{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+}
+.dateInfoContent{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+}
+.dateContent , .obleaContent{
+    width: 50%;
+}
+.dateContent label , .obleaContent label , .inputDownContent label{
+    display: block;
+    width: 81%;
+    font-size: 12px;
+    font-weight: bold;
+}
+.dateContent input , .obleaContent input , .inputDownContent input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.dowInputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1%;
+    width: 100%;
+}
+.row1{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.carData{
+    border: 1px solid;
+}
+.contentDataCar{
+    display: flex;
+    justify-content: space-between;
+}
+.infoContent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contentDataCarCheked{
+    display: grid;
+    grid-template-columns: 23.5% 26% 1fr;
+}
+.selectsOptions{
+    display: flex;
+    justify-content: space-around;
+    height: 60%;
+}
+.optionCheked{
+    display: flex;
+    flex-direction: column;
+}
+.optionsSectionContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.chekSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.typeVehicle , .inyectionCase{
+    text-align: center;
+}
+.infoCheked{
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+}
+.operationType{
+    display: grid;
+    grid-template-columns: 37% 1fr;
+    font-size: 13px;
+    border: 1px solid;
+}
+.contentOption{
+    display: flex;
+    flex-direction: column;
+}
+.operationOptionContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 0.5% 0;
+}
+.row2Top{
+    display: grid;
+    grid-template-columns: 37% 33% 10% 20%;
+    width: 100%;
+}
+.inputContentUser{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.inputContentUser strong{
+    font-size: 12px;
+}
+.inputContentUser input{
+    margin: 0 4%;
+}
+.row2Bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 7% 1fr;
+    width: 100%;
+}
+.regulatorData{
+    display: grid;
+    grid-template-columns: 12% 43% 1fr 1fr 1fr;
+    font-size: 12px;
+}
+.guideRegulator{
+    display: grid;
+    grid-template-rows: 21% 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding: 6% 0;
+}
+.inputsContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    border: 1px solid;
+    padding: 2% 0;
+}
+.regulatorInputContent{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.regulatorInputContent input{
+    max-width: 50px;
+}
+.manometroData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    border: 1px solid;
+    padding: 2% 0%;
+}
+.inputsManometro{
+    display: grid;
+    text-align: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+.inputsManometro input{
+    max-width: 40px;
+}
+.strongTtile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+}
+.newOrOld{
+    width: 48%;
+    display: grid;
+    align-items: center;
+}
+.newOrOld label{
+    width: 100%;
+    font-weight: bold;
+}
+.newOrOld input{
+    width: 50%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.row4{
+    display: grid;
+}
+.titleSection{
+    display: grid;
+    grid-template-columns: 72% 1fr;
+    position: relative;
+}
+
+.cilindersData{
+    border: 1px solid;
+    padding: .5%;
+}
+.cilInfoContent{
+    display: grid;
+}
+.cilInfo .dataClient{
+    font-size: 12px;
+}
+.guideInfo{
+    display: grid;
+    grid-template-columns: 10% 12% 9% 7% 7% 10% 10% 9% 19% 8%;
+    text-align: center;
+}
+.chekedCil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: self-start;
+}
+.chekedCil strong {
+    font-size: 10px;
+}
+.inputCilDataContent , .inputCilDataContentCheked{
+    display: grid;
+    grid-template-columns: 12% 10% 8% 4% 4% 4% 4% 10% 8% 1fr ;
+}
+.valveContent{
+    display: grid;
+    grid-template-columns: 41% 41% 17%;
+    border-left: 2px solid black;
+}
+.cilInfo .inputCilDataContent input , .inputCilDataContentCheked input{
+    width: 82%;
+    margin: auto;
+    display: block;
+}
+.inputsContainerContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    height: 100%;
+}
+.inputsContainerContentRevisado{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    justify-content: space-between;
+}
+.inputsContainer input {
+    width: 89%;
+    font-size: 11px;
+    margin: 1px auto;
+    min-height: 17px;
+    max-height: 17px;
+}
+.absoluteInput{
+    font-size: 11px;
+}
+.valvulaCil{
+    padding: 1%;
+    border: 1px solid;
+}
+.dataClient{
+    font-size: 12px;
+}
+.valvulaInputsContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 86%;
+}
+.valvulaInputs{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+}
+.valvulaInputs input {
+    width: 85%;
+    margin: 1%;
+}
+.row5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-right: 1px solid;
+}
+.sectionContent{
+    border: 1px solid;
+    padding: 2% 6%;
+}
+.inputsContentSecction{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 12px;
+    padding: 1% 0%;
+}
+.inputsContentSecction input {
+    width: 70%;
+    padding: 2%;
+}
+.row6{
+    height: 70px;
+    border: 1px solid;
+    display: grid;
+    padding: 0 1%;
+}
+.row6 textarea{
+    outline: 0px;
+    border: none;
+    cursor: pointer;
+}
+.printContent{
+    position: fixed;
+    bottom: 1%;
+    right: 19px;
+}
+#printButton{
+    padding: 11%;
+    background: #333;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+}
+#contentSearchSelectedBrands , #contentSearchSelected{
+    display: none;
+}
+#contentSearchSelected{
+    position: absolute;
+    margin-top: 5.5%;
+    width: 20%;
+}
+#contentSearchSelected button{
+    width: 100%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+#resultsOfTheSearchModel, #resultsOfTheSearchBrand{
+    height: 27vh;
+    border: 1px solid #ccc;
+    background: white;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#inputContainerSearchContentModel , #inputContainerSearchContentBrand{
+    position: absolute;
+    z-index: 1;
+    background: white;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.searchBrand{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3% 2%;
+    width: 100%;
+    text-align: start;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    background: white;
+}
+.searchBrand strong{
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+

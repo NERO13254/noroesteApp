@@ -1,0 +1,210 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tablesContent{
+    display: grid;
+    width: 32%;
+}
+.tablesContent label , .exportController{
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.selectSection{
+    display: grid;
+    grid-template-columns: 1fr 32%;
+    border: 1px solid #ccc;
+}
+.selectSection button , .selectSection select{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.exportController{
+    display: grid;
+    width: 32%;
+    margin-top: 5%;
+}
+.exportController button{
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+#sectionModifyOrderTxt{
+    display: none;
+    position: fixed;
+    width: 80%;
+    left: 7%;
+    height: 86vh;
+    top: 5vh;
+    background: #333;
+    color: white;
+    padding: 3%;
+}
+#wafersExporteds{
+    height: 74vh;
+    overflow: scroll;
+}
+#wafersExporteds::-webkit-scrollbar{
+    background-color: transparent;
+    height: 0px;
+    width: 4px;
+}
+#wafersExporteds::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+#sectionModifyOrderTxt h2{
+    font-size: 16px; 
+}
+.guideContent{
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    align-items: center;
+    box-sizing: border-box;
+}
+.guideContent strong{
+    font-size: 13px;
+    border-left: 1px solid #ccc;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 2% 0% 2% 0%;
+    padding-left: 4%;
+    box-sizing: border-box;
+}
+#dataContent{
+    width: 100%;
+    height: 75%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+#dataContent::-webkit-scrollbar{
+    width: 4px;
+    height: 0;
+    background-color: #333;
+}
+#dataContent::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+.dataPositionContent{
+    display: grid;
+    grid-template-columns: 337px 140px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    height: 37px;
+}
+.dataPositionContent input {
+    background: transparent;
+    color: white;
+    border: none;
+    border-left: 1px solid white;
+    height: 100%;
+    padding-left: 9%;
+}
+.dataPositionContent strong{
+    font-size: 14px;
+    padding-left: 4%;
+}
+.buttonController{
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+.waferGeneralContent{
+    display: grid;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.generalContent{
+    display: grid;
+    grid-template-columns: 49.9% 30% 20%;
+    display: grid;
+    grid-template-columns: 49.9% 30% 20%;
+    height: 32px;
+    align-items: center;
+}
+.domainContent{
+    height: 100%;
+    border-left: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+.waferGeneralContent strong{
+    padding-left: 4%;
+}
+.buttonContent{
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+}
+.buttonContent button {
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    background-color: transparent;
+    border-left: 1px solid #ccc;
+}
+.desplegateOptions {
+    background-image: url("../img/flecha.png");
+    background-position: center;
+    background-size: 23px;
+    background-repeat: no-repeat;
+}
+.reExportCilinder{
+    background-image: url("../img/recycling.png");
+    background-position: center;
+    background-size: 23px;
+    background-repeat: no-repeat;
+}
+.desplegateInfo {
+    display: none;
+}
+.desplegateInfo button{
+    text-align: start;
+    border: none;
+    border-top: 1px solid #ccc;
+    height: 37px;
+    cursor: pointer;
+    /* background-image: url(../img/flecha.png);
+    background-position: 93%;
+    background-size: 23px;
+    background-repeat: no-repeat; */
+}
+.sectionContent{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.contentData{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 2%;
+    display: grid;
+}
+.contentData label{
+    font-size: 13px;
+    font-weight: 600;
+}
+.contentData input{
+    width: 90%;
+}
+
+.onlyDataContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid{
+    display: grid ;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.onlyColumn{
+    grid-template-columns: 1fr;
+}

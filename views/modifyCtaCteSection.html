@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Cuneta Corriente</title>
+    <link rel="stylesheet" href="../styles/modifyCtaCteSection.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+    <link rel="stylesheet" href="../styles/succesAlert.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+</head>
+<body>
+    <!-- boton para vovler atras -->
+    <div id="backBtn"></div>
+    <!-- contenedor de alertas -->
+    <div id="reportStatus"></div>
+
+    <div class="containerAll">
+        
+        
+        <div class="searchController">
+            <!-- buscador -->
+            <input type="text" placeholder="Buscar . . . " id="searchCtaCte">
+
+            <!-- boton para crear una cta cte -->
+            <button id="newCtaCte">+</button>
+        </div>    
+
+        <!-- contenedor general de resultados -->
+        <div id="containerAllResults">
+
+            <!-- contenedor de resultados de busqueda -->
+            <div id="resultsOfSearch"></div>
+
+            <!-- resultados por defecto -->
+            <div id="defaultResults"></div>
+
+        </div>
+
+        <!-- seccion de modificado de datos -->
+        <div id="sectionModify">
+            <div class="dataContentGeneral">
+                <div class="dataContent">
+                    <label for="id">Id</label>
+                    <strong type="text"  id="id" class="dataCtaCte"></strong>
+                </div>
+                <div class="dataContent">
+                    <label for="fecha">Fecha</label>
+                    <input type="text"  id="fecha" class="dataCtaCte" placeholder="5/5/2025 . . .">
+                </div>
+                <div class="dataContent">
+                    <label for="name">Nombre</label>
+                    <input type="text"  id="name" class="dataCtaCte" placeholder="Pedro . . .">
+                </div>
+                <div class="dataContent">
+                    <label for="cuit">CUIT</label>
+                    <input type="text"  id="cuit" class="dataCtaCte" placeholder="11-555265-20 . . .">
+                </div>
+                <div class="dataContent">
+                    <label for="iva">IVA</label>
+                    <input type="text"  id="iva" class="dataCtaCte" placeholder="iva . . .">
+                </div>
+                <div class="dataContent">
+                    <label for="valorph">Valor de prueba hidraulica</label>
+                    <input type="text"  id="valorph" class="dataCtaCte" placeholder="$$$ . . .">
+                </div>
+                <div class="dataContent">
+                    <label for="conversion">Valor de Conversión</label>
+                    <input type="text"  id="conversion" class="dataCtaCte" placeholder="$$$ . . .">
+                </div>
+                <div class="dataContent">
+                    <label for="modificacion">Valor de Modificación</label>
+                    <input type="text"  id="modificacion" class="dataCtaCte" placeholder="$$$ . . .">
+                </div>
+                <div class="dataContent">
+                    <label for="revanual">Valor de renovación anual</label>
+                    <input type="text"  id="revanual" class="dataCtaCte" placeholder="$$$ . . .">
+                </div>
+                <div class="dataContent">
+                    <label for="desmontaje">Valor de desmontaje</label>
+                    <input type="text"  id="desmontaje" class="dataCtaCte" placeholder="$$$ . . .">
+                </div>
+                <div class="dataContent">
+                    <label for="baja">Valor de baja</label>
+                    <input type="text"  id="baja" class="dataCtaCte" placeholder="$$$ . . .">
+                </div>
+            </div>
+
+            <div class="buttonController">
+                <button id="cancelOperation">Cancelar</button>
+                <button id="deleteCtaCte">Borrar Cta Cte</button>
+                <button id="saveOperation">Guardar</button>
+                <button class="createCtaCte" id="createCtaCte">Crear</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/modifyCtaCteSection.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+3101;20-25258423-5;codigoInternoDelTaller;numeroDeHabilitaciónDelTaller;DNI;25258423;DNI;44504656;R;revision;810;811;ABC112;ford;FALCON;2011;part;marcos2;manzana 3321;LOS POLVORINES;BUENOS AIRES;1613;011;tipoDeDniDesconocido;numeroDeDniDesconocido;29/7/2024;29/7/2024;29/7/2025;30/61/2024;A;

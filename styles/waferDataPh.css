@@ -1,0 +1,151 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.newAndOldWaferContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#inputContainers{
+    display: grid;
+    grid-template-columns:  1fr;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+.operationTypeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    font-size: 13px;
+    font-weight: bold;
+}
+.inputContentRow1{
+    display: grid;
+    width: 30%;
+    font-size: 13px;
+    font-weight: bold;
+}
+.inputContentRow1 input {
+    width: 90%;
+}
+.divContentModel{
+    font-size: 13px;
+}
+.subTitleStrong{
+    font-size: 18px;
+}
+.operationsContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-weight: bold;
+}
+.selectContainer{
+    display: grid;
+    grid-template-columns: 77% 1fr;
+    align-items: center;
+}
+.inyeccionContent , .row4{
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    font-size: 13px;
+    font-weight: bold;
+}
+.divContentModel , .divContentModel{
+    width: 61%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.regulatorData{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin-left: auto;
+}
+#regulatorReplace{
+    display: none;
+}
+.gridBox{
+    display: grid !important;
+}
+.regulatorInptusContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.dateReg{
+    display: grid;
+    width: 90%;
+    font-size: 13px;
+    font-weight: bold;
+}
+.dateReg input{
+    width: 90%;
+}
+#inputsCollecteds{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.userDataContainer input{
+    width: 87%;
+}
+.labelContent{
+    font-size: 13px;
+    font-weight: bold;
+}
+.cilinderInputContent{
+    display: grid;
+    grid-template-columns: 24% 11% 13% 13% 13% 8% 8% 4%;
+}
+.inputsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputsContainer form{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.valveInputContent{
+    display: flex;
+    justify-content: space-between;
+}
+.inputsContainer input {
+    width: 80%;
+}
+.inputContentCheckBox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    margin: 1%;
+    border-radius: 5px;
+}
+.inputContentCheckBox input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#cilinderData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cilinderDataContent{
+    display: flex;
+}
+.inputsDataVehicleContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

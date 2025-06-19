@@ -1,0 +1,138 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    font-size: 17px;
+}
+.titleConent{
+    width: 190%;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+.dangerousDiv, .succesDiv{
+    background-color: red;
+    color: white;
+    padding: .5em;
+}
+.succesDiv{
+    background-color: rgb(27, 184, 27);
+}
+.bodyContent{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 83vh;
+} 
+.bodyLeft, .bodyRight{
+    border: 1px solid #ccc;
+    margin: 3%;
+}
+.secondSection{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.thinkness h3 {
+    margin-bottom: 6%;
+    width: 91%;
+    text-align: center;
+    font-size: 32px;
+}
+.thinknessContent {
+    display: block;
+}
+.thinknessContent h2 {
+    margin: auto;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.dataDivisor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dataDivisor label{
+    font-size: 12px;
+}
+.dataDivisor input {
+    max-width: 100px;
+    border: 1px solid #ccc;
+    outline: 0px;
+}
+.longitudinales{
+    display: flex;
+    justify-content: space-around;
+}
+.comunAndSpecial{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+}
+.ojivConent{
+    text-align: center;
+}
+.ojivasContentDivs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.diamTtile, .testTitle , .obsTitle{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.diametersContentInputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.diamInpts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.diamInpts label {
+    font-size: 12px;
+}
+.diamInpts input{
+    max-width: 100px;
+    border: 1px solid #ccc;
+    outline: 0px;
+    width: 80%;
+    margin: auto;
+}
+.contentTestInput .diamInpts label{
+    margin-left: 3%;
+}
+.contentTestInput .diamInpts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+.contentTestInput .diamInpts select{
+    max-width: 111px;
+    min-width: 111px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-left: 20%;
+    outline: none;
+}
+.buttnontroller{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4%;
+}
+.buttnontroller button{
+    background-color: rgb(115, 115, 184);
+    font-size: 13px;
+    color: white;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: 1em;
+}

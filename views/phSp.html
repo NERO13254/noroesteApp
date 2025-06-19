@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phSp</title>
+    <link rel="stylesheet" href="../styles/phSp.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+    <link rel="stylesheet" href="../styles/backElement.css">
+</head>
+<body>
+    <div id="reportStatus"></div>
+    <div id="backBtn"></div>
+
+    <div class="containerAll">
+
+        <!-- datos del usuario y del cilindro -->
+        <div class="sectionConten">
+            <!-- seccion de datos del cliente -->
+            <div class="formCilinderDataUser">
+                <div class="infoContent">
+                    <select name="idtype" id="idtype" class="dataClient">
+                        <option value="DNI">DNI</option>
+                        <option value="LC">LC</option>
+                        <option value="LE">LE</option>
+                        <option value="CUIT">CUIT</option>
+                    </select>
+                </div>
+
+                <div class="infoContent">
+                    <input type="number" class="dataGeted" id="dni" placeholder="numero DNI . . ." class="dataClient">
+                </div>
+
+                <div class="infoContent">
+                    <input type="text" class="dataGeted" id="nameandsurname"  placeholder="Nombre Apellido . . ." class="dataClient">
+                </div>
+
+                <div class="infoContent">
+                    <div class="locationContent">
+                        <input type="text" class="dataGeted" id ="country" placeholder="LOCALIDAD . . ." class="dataClient">
+                        <div class="resultsContent" id="resultsContent">
+                            <!-- EN ESTA ZONA SE CARGAN LAS LOCALIDADES -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infoContent"  id="provinciaContent">
+                    <select name="country" id="provincia" class="dataClient">
+                        <option value="buenos aires" selected>Buenos aires</option>
+                    </select>
+                </div>
+
+                <div class="infoContent">
+                    <input type="text" class="dataGeted" id="cp" class="dataClient" placeholder="Codigo Postal . . .">
+                </div>
+                <div class="infoContent">
+                    <input type="text" class="dataGeted" id="direccion" placeholder="Direccion  . . ." class="dataClient">
+                </div>
+                <div class="infoContent">
+                    <input type="text" class="dataGeted" id="domain" placeholder="Dominio . . ." class="dataClient">
+                </div>
+
+                <div class="workshopData">
+                    <p>Datos del Taller seleccionado :</p>
+                    <strong id="workshop"></strong>
+                    <strong  id="workshopcode"></strong>
+                    <strong id="cuit"></strong>
+                </div>
+            </div>
+
+            <!-- seccion de datos del cilindro -->
+            <div class="formCilinderData">
+
+                <div id="containerTopInputs">
+                    <!-- codigo de homologado -->
+                    <div class="infoContent" id="omologationContent">
+                        <input type="text" class="dataGeted" name="code" id="omologation" placeholder="Cod Homologado . . ." maxlength="4">
+                        <button id="corroborateCilinderInEnargas">G</button>
+                    </div>
+                    <!-- fecha de fabricacion -->
+                    <div class="infoContent" id="dataCrpc">
+                        <div class="dateInputContent">
+                            <input type="number" class="dataCilInput" name="dataCil_fabMonth" id="dateFab" placeholder="Mes Fab.  . . ."  oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);">
+                        </div>
+                        <div class="dateInputContent">
+                            <input type="number" class="dataCilInput" name="dataCil_fabYear" id="dateFabYear" placeholder="Año Fab. . . ."  oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);" >           
+                        </div>
+                    </div>
+                    <!-- fechas de crpc -->
+                    <div class="infoContent" id="dataCrpc">
+                        <div class="dateInputContent">
+                            <input type="number" class="dataCilInput" name="dataCil_crpMonth" id="lastCrpc"     placeholder="Crpc Mes . . ."  oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);">
+                        </div>
+                        <div class="dateInputContent">
+                            <input type="number" class="dataCilInput" name="dataCil_crpYear" id="lastCrpcYear" placeholder="Crpc Año . . ."  oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);" >
+                        </div>
+                    </div>
+                    <!-- numero de serie -->
+                    <div class="infoContent">
+                        <input type="text" class="dataGeted" name="serialnumber" id="serialnumber" placeholder="Num. Serie . . .">
+                    </div>
+                    <!-- masa -->
+                    <div class="infoContent">
+                        <input type="text" name="taramedido" class="dataGeted" id="taraestimado" placeholder="Masa . . .">
+                    </div>
+                    <!-- volumen -->
+                    <div class="infoContent">
+                        <input type="text" class="dataGeted" name="volestimado" id="volmedido" placeholder="Vol. . . .">
+                    </div>
+                    <!-- pec -->
+                    <div class="infoContent">
+                        <select name="pec" class="dataCilInput" id="pec">
+
+                        </select>
+                    </div>
+                </div>  
+                
+                
+                <!-- informacion detallada del cilindro -->
+                <div class="specificInfoCil">
+
+                    
+                    <!-- datos especificos generales del cilindro -->
+                    <div class="infoContent" id="sepecificDataCil">
+                        <div class="inputContent">
+                            <select name="case" id="case" class="dataCil">
+                                <option value="periodicRevison" selected>REVISION PERIODICA</option>
+                                <option value="condenado">CILINDRO CONDENADO</option>
+                            </select>
+                        </div>
+                        <div class="inputContent">
+                            <label for="brand">Marca</label>
+                            <strong type="text" class="dataCil" name="brand" id="brand"></strong>
+                        </div>
+                        <div class="inputContent">
+                            <label for="capacity">Capacidad</label>
+                            <strong type="text" class="dataCil" name="capacity" id="capacity"></strong>
+                        </div>
+            
+                        <div class="inputContent">
+                            <label for="diametter">DIAMETRO</label>
+                            <strong type="text" class="dataCil" name="diametronominal" id="diametter"></strong>
+                        </div>
+            
+                        <div class="inputContent">
+                            <label for="widthCil">LARGO </label>
+                            <strong type="text" name="width" class="dataCil" id="width"></strong>
+                        </div>
+
+                        <div class="inputContent">
+                            <div class="dataCilinder">
+                                <button>Añadir imagen</button>
+                                <input type="file" name="img" id="addImg" placeholder="IMAGEN" multiple>
+                            </div>
+                        </div>  
+                        
+                        <div class="inputContent" id="defaultSpecificDataCilinder">
+                            <div class="specificData">
+                                <label for="rules">REGLAMENTACION </label>
+                                <strong id="rules" name="rulefab" class="dataCil"></strong>
+                            </div>
+                            <div class="specificData">
+                                <label for="thikness">ESPESOR</label>
+                                <strong id="thikness" class="dataCil"> </strong>
+                            </div>
+
+                            <div class="specificData">
+                                <label for="coeficent">COEFICIENTE</label>
+                                <strong  id="coficent" name="coeficent" class="dataCil"></strong>
+                            </div>
+
+                            <div class="specificData">
+                                <label for="maxExpansion">EXP MAXIMA</label>
+                                <strong id="maxexpansion"   name="expansiontotal" class="dataCil" ></strong>
+                            </div>
+
+                            <div class="specificData">
+                                <label for="totalExpansion" >EXP PERMANENTE</label>
+                                <strong id="totalexpansion" name="expansionpermanente" class="dataCil"></strong>
+                            </div>
+
+                        </div>
+                        <div class="inputContent">
+                            <textarea name="obsTextarea" class="dataGeted" id="obs" placeholder="Observaciones . . ."></textarea>
+                        </div>
+
+                    </div> 
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- seccion de todos  los datos especificos del cilindro -->
+        <div class="specificCilnderAllDataContent">
+            <div class="bodyLeft">
+                <div class="thinkness">
+                    <div class="thinknessContent">
+                        <h2>LONGITUDINALES</h2>
+                        <div class="longitudinales">
+        
+                            <div class="logitudesDiv">
+                                <div class="dataDivisor">
+                                    <label for="thikness1">ESPESOR 1</label>
+                                    <input type="decimal" class="dataGeted" name="diametro" id="diametro1">
+                                </div>
+                                <div class="dataDivisor">
+                                    <label for="thikness2">ESPESOR 2</label>
+                                    <input type="decimal" class="dataGeted" name="diametro" id="diametro2">
+                                </div>
+                                <div class="dataDivisor">
+                                    <label for="thikness3">ESPESOR 3</label>
+                                    <input type="decimal" class="dataGeted" name="diametro" id="diametro3">
+                                </div>
+                                <div class="dataDivisor">
+                                    <label for="thikness4">ESPESOR 4</label>
+                                    <input type="decimal" class="dataGeted" name="diametro" id="diametro4">
+                                </div>
+                                <div class="dataDivisor">
+                                    <label for="thikness5">ESPESOR 5</label>
+                                    <input type="decimal" class="dataGeted" name="diametro" id="diametro5">
+                                </div>
+                            </div>
+                            
+                            <div class="longitudinalesDiv">
+                                <div class="longitudesDiv">
+                                    <div class="dataDivisor">
+                                        <label for="thikness6">ESPESOR 6</label>
+                                        <input type="number" class="dataGeted" name="diametro" id="diametro6">
+                                    </div>
+                                </div>
+                                
+                                <div class="longitudesDiv">
+                                    <div class="dataDivisor">
+                                        <label for="thikness7">ESPESOR 7</label>
+                                        <input type="number" class="dataGeted" name="diametro" id="diametro7">
+                                    </div>
+                                </div>
+                                <div class="longitudesDiv">
+                                    <div class="dataDivisor">
+                                        <label for="thikness8">ESPESOR 8</label>
+                                        <input type="number" class="dataGeted" name="diametro" id="diametro8">
+                                    </div>
+                                </div>
+                                <div class="longitudesDiv">
+                                    <div class="dataDivisor">
+                                        <label for="thikness9">ESPESOR 9</label>
+                                        <input type="number" name="thikness9" id="thikness9">
+                                    </div>
+                                </div>
+                                <div class="longitudesDiv">
+                                    <div class="dataDivisor">
+                                        <label for="thikness10">ESPESOR 10</label>
+                                        <input type="number" name="thikness10" id="thikness10">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="succesOrDangerousLength" id="succesOrDangerousLength"></div>
+                </div>
+        
+                <div class="comunAndSpecial">
+                    <div class="comunContent">
+                        <h2>FONDO COMUN <strong id="underSimple"></strong></h2>
+                        <div class="fondoComun">
+                            <div class="dataDivisor">
+                                <label for="thikness1Fondo">ESPESOR 1</label>
+                                <input type="number" class="dataGeted" name="thikness1Fondo" id="fondo1">
+                            </div>
+                            <div class="dataDivisor">
+                                <label for="thikness2Fondo">ESPESOR 2</label>
+                                <input type="number" class="dataGeted" name="thikness2Fondo" id="fondo2">
+                            </div>
+                            <div class="dataDivisor">
+                                <label for="thikness3Fondo">ESPESOR 3</label>
+                                <input type="number" class="dataGeted" name="thikness3Fondo" id="fondo3">
+                            </div>
+                            <div class="dataDivisor">
+                                <label for="thikness4Fondo">ESPESOR 4</label>
+                                <input type="number" class="dataGeted" name="thikness4Fondo" id="fondo4">
+                            </div>
+                            <div class="dataDivisor">
+                                <label for="thikness5Fondo">ESPESOR 5</label>
+                                <input type="number" class="dataGeted" name="thikness5Fondo" id="fondo5">
+                            </div>
+                            <div class="dataDivisor">
+                                <label for="thikness3Fondo">ESPESOR 6</label>
+                                <input type="number" class="dataGeted" name="thikness6Fondo" id="fondo6">
+                            </div>
+                        </div>
+                        <div id="succesOrDangerousUnder">
+                            
+                        </div>
+    
+                    </div>   
+                </div>
+        
+                <div class="ojivConent">
+                    <h3>OJIVA <strong id="idOjiva"></strong> </h3>
+                    <div class="ojivasContentDivs">
+                        <div class="ojiva">
+                            <div class="ojivaSection">
+                                <div class="dataDivisor">
+                                    <label for="thikness1Ojiva">ESPESOR 1</label>
+                                    <input type="number" class="dataGeted" name="thikness1Ojiva" id="ojiva1">
+                                </div>
+                                <div class="dataDivisor">
+                                    <label for="thikness2Ojiva">ESPESOR 2</label>
+                                    <input type="number" class="dataGeted" name="thikness2Ojiva" id="ojiva2">
+                                </div>
+                                <div class="dataDivisor"><label for="thikness3Ojiva">ESPESOR 3</label>
+                                    <input type="number" class="dataGeted" name="thikness3Ojiva" id="ojiva3">
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="ojiva">
+                            <div class="ojivaSection">
+                                <div class="dataDivisor">
+                                    <label for="thikness4Ojiva">ESPESOR 4</label>
+                                    <input type="number" class="dataGeted" name="thikness4Ojiva" id="ojiva4">
+                                </div>
+                                <div class="dataDivisor">
+                                    <label for="thikness5Ojiva">ESPESOR 5</label>
+                                    <input type="number" class="dataGeted" name="thikness5Ojiva" id="ojiva5">
+                                </div>
+                                <div class="dataDivisor">
+                                    <label for="thikness6Ojiva">ESPESOR 6</label>
+                                    <input type="number" class="dataGeted" name="thikness6Ojiva" id="ojiva6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ojivaMessage">
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="bodyRight">
+                <div class="diameters">
+                    <div class="diamTtile">
+                        <h3>DIAMETROS <strong id="diameterMin"></strong></h3>
+                    </div>
+                    
+    
+                    <div class="diametersContentInputs">
+                        <div class="diametersA">
+                            <div class="diamInpts">
+                                <label for="diameter1diam">DIAMETRO 1</label>
+                                <input type="decimal" class="dataGeted" name="diameter1diam" id="diam1">
+                            </div>
+                            <div class="diamInpts">
+                                <label for="diameter2diam">DIAMETRO 2</label>
+                                <input type="decimal" class="dataGeted" name="diameter2diam" id="diam2">
+                            </div>
+                            <div class="diamInpts">
+                                <label for="diameter3diam">DIAMETRO 3</label>
+                                <input type="decimal" class="dataGeted" name="diameter3diam" id="diam3">
+                            </div>
+                        </div>
+    
+                        <div class="diametersB">
+                            <div class="diamInpts">
+                                <label for="diameter1diam90">DIAMETRO  90º 1</label>
+                                <input type="text" class="dataGeted" name="diameter1diam90" id="diam4">
+                            </div>
+                            <div class="diamInpts">
+                                <label for="diameter2diam90">DIAMETRO 90º 2</label>
+                                <input type="text" class="dataGeted" name="diameter2diam90" id="diam5">
+                            </div>
+                            <div class="diamInpts">
+                                <label for="diameter3diam90">DIAMETRO 90º 3</label>
+                                <input type="text" class="dataGeted" name="diameter3diam90" id="diam6">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="diameterMessage">
+                        
+                    </div>
+                </div>
+    
+                <div class="testData">
+                    <div class="testContent">
+                        <div class="testTitle">
+                            <h3>DATOS DEL ENSAYO</h3>
+                        </div>
+                        
+                        <div class="contentTestInput">
+                            <div class="diamInpts">
+                                <label for="expancion">EXPANCION TOTAL</label>
+                                <input type="number" class="dataGeted" name="expancion" id="expansiontotal">
+                            </div>
+                            <div class="diamInpts">
+                                <label for="expancionPer">EXPANCION PERMANENTE</label>
+                                <input type="number" class="dataGeted" name="expancionPer" id="expansionpermanente">
+                            </div>
+                            <div class="diamInpts">
+                                <label for="bureta">BURETA</label>
+                                <select name="bureta" class="dataGeted" id="bureta">
+                                    <option value="mayor" selected >MAYOR</option>
+                                    <option value="menor">MENOR</option>
+                                    <option value="mayor y menor">MAYOR Y MENOR</option>
+                                </select>                           
+                            </div>
+                            <div class="diamInpts">
+                                <label for="tempWater">TEMPERATURA DEL AGUA</label>
+                                <input type="number" class="dataGeted" name="tempWater" id="watertemperature">
+                            </div>
+                            <div class="diamInpts">
+                                <label for="capMedida">CAPACIDAD MEDIDA</label>
+                                <input type="number" class="dataGeted" name="capMedida" id="volmedido">
+                            </div>
+                            <div class="diamInpts">
+                                <label for="taraMedida">TARA MEDIDA</label>
+                                <input type="number" class="dataGeted" name="taraMedida" id="taramedido">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- controlador de botones -->
+        <div class="buttonContent">
+            <button id="nextWindow">Espesores</button>
+            <button id="saveCilinder">Guardar</button>
+            <button id="condenatedCilinder">Condenar</button>
+        </div>
+    </div>
+
+    <script src="../scripts/phSp.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+.formConten{
+    display: block;
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.optionContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    font-weight: 600;
+    font-size: 13px;
+}
+.optionContent input , select{
+    max-width: 190px;
+    border: 1px solid #ccc;
+    outline: 0px;
+    padding: 1% 0;
+}
+.optionContent select{
+    width: 230px;
+}
+#saveClient{
+    background-color: rgb(115, 115, 184);
+    font-size: 13px;
+    color: white;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: .5em;
+    margin-top: 7em;
+    width: 188px;
+}
+.optionContent input[type="button"]{
+    font-size: 13px;
+    border: none;
+    outline: 0px;
+}

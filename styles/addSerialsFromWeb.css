@@ -1,0 +1,78 @@
+
+*{
+    font-family: system-ui;
+}
+.serialsContent{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 92vh;
+    overflow: scroll;
+}
+.headerProduct{
+    display: grid;
+    grid-template-columns: 1fr 15% 15%;
+    height: 30px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 0 1%;
+    border-left: 1px solid #ccc;
+}
+.headerProduct button{
+    border: none;
+    cursor: pointer;
+}
+#serialsContent{
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: scroll;
+}
+#serialsContent::-webkit-scrollbar{
+    width: 4px;
+    height: 0px;
+}
+#serialsContent::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+.contentSerials{
+    display: none;
+}
+.contentSerials{
+    border-bottom: 1px solid #ccc;
+}
+.serialData{
+    height: 33px;
+    display: grid;
+    grid-template-columns: 1fr 10%;
+    align-items: center;
+    border-left: 1px solid #ccc;
+    padding: 0 0% 0% 1% ;
+    border-bottom: 1px solid #ccc;
+}
+.serialData button{
+    border: none;
+    height: 100%;
+    cursor: pointer;
+}
+
+.showGrid{
+    display: grid;
+}
+.succesStatus{
+    background-color: #7db17d;
+    color: white;
+}
+.noWebData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 50px;
+    text-align: center;
+    width: 73%;
+    margin: auto;
+    color: #d5d5d5;
+    text-transform: capitalize;
+    cursor: default;
+}

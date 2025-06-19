@@ -1,0 +1,35 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.containerAll{
+    width: 95%;
+    margin: auto;
+}
+.titleContent{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.inputContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3%;
+}
+
+.buttonController button{
+    background-color: rgb(115, 115, 184);
+    font-size: 13px;
+    color: white;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: 0.5em;
+    width: 49.4%;
+}
+.alertContnet{
+    background: red;
+    color: white;
+    width: 65.9%;
+    text-align: center;
+    margin: 5% 0;
+}

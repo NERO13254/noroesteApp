@@ -1,0 +1,2 @@
+3101;20-25258423-5;codigoInternoDelTaller;numeroDeHabilitaciónDelTaller;ABC112;part;in09;546456;M;65;44;4;5;29/7/2029;A;NumCertificado;29/7/2024;A;
+3101;20-25258423-5;codigoInternoDelTaller;numeroDeHabilitaciónDelTaller;ABC112;part;ER32;465465;M;58;88;4;5;29/7/2029;A;NumCertificado;29/7/2024;A;

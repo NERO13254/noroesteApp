@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajos y recambios</title>
+    <link rel="stylesheet" href="../styles/worksAndRefills.css">
+    <link rel="stylesheet" href="../styles/reportStatus.css">
+    <link rel="stylesheet" href="../styles/succesAlert.css">
+</head>
+<body>
+    <!-- contenedor de alertas -->
+    <div id="reportStatus"></div>
+
+    <!-- contenedor general -->
+    <div class="conainerAll">
+        <!-- contenedor de busqueda y boton crear -->
+        <div class="headerContent">
+            <input type="text" id="startSearch" placeholder="Buscar . . ."  >
+            <button id="createElement">Crear</button>
+        </div>
+    </div>
+
+    <!-- contenedor de guía de columnas -->
+    <div class="guideContent">
+        <strong>Nombre</strong>
+        <strong>Descripción</strong>
+        <strong>Nuevo</strong>
+        <strong>Usado</strong>
+    </div>
+
+    <!-- contenedor general de busqueda -->
+    <div id="generalListResults">
+        <!-- resultados de busqueda -->
+        <div id="resultsOfSearch"></div>
+        <!-- resultados por defecto -->
+        <div id="defaultResults"></div>
+    </div>
+
+    <div id="createOrModifyElement">
+        <div class="attributeContent">
+            <label for="name">Nombre</label>
+            <input type="text" class="dataElement" name="name" id="name">
+        </div>
+        <div class="attributeContent">
+            <label for="description">Descripción</label>
+            <textarea name="description" class="dataElement" id="description"></textarea>
+        </div>
+        <div class="attributeContent">
+            <label for="valuenew">Precio Nuevo</label>
+            <input type="number" class="dataElement" value="0" name="valuenew" id="valuenew">
+        </div>
+        <div class="attributeContent">
+            <label for="valueused">Precio Usado</label>
+            <input type="number" class="dataElement" value="0" name="valueused" id="valueused">
+        </div>
+
+        <div class="buttonController">
+            <button id="cancelModifyOrCreateElement">Cancelar</button>
+            <button id="saveModifyOrCreateElement">Guardar</button>
+        </div>
+    </div>
+
+    <script type="module" src="../scripts/worksAndRefills.js"></script>
+</body>
+</html>

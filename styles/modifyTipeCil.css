@@ -1,0 +1,39 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.titleContent{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.bodyContent{
+    width: 100%;
+    height: 70vh;
+}
+.inputContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1%;
+    align-items: center;
+}
+.inputContent input{
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    outline: none;
+}
+.buttonController{
+    display: flex;
+    justify-content: space-around;
+}
+.buttonController button {
+    background-color: rgb(115, 115, 184);
+    font-size: 13px;
+    color: white;
+    border: none;
+    outline: 0px;
+    cursor: pointer;
+    padding: 1em;
+}

@@ -1,0 +1,179 @@
+.coontainerAll{
+    display: grid;
+    grid-template-rows: 80px 20px 30px 1fr;
+    height: 95vh;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.headerSection{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+.dateContnet{
+    display: grid;
+    grid-template-columns: 40px 42px 60px 1fr;
+    align-items: center;
+}
+.dateContent input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.headerSection .dateContent input{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.dateContent label{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.dateContnet button{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.headerSection input{
+    width: 150px;
+}
+.payOrDebitGuide{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+.payOrDebitGuide strong{
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.listController{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.listController button {
+    border: none;
+    height: 100%;
+}
+.newPayContent, .newDebitContent{
+    display: grid;
+    grid-template-columns: 54% 34% 1fr;
+    align-items: center;
+    height: 29px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.newDebitContent input, .newPayContent input {
+    height: 100%;
+    padding: 0;
+    border: none;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#payAndEgressGeneral{
+    width: 100%;
+    height: 100%;
+}
+
+#defaultResults{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+#egressDefault{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.dataResults{
+    overflow: scroll;
+    position: relative;
+}
+.dataResults::-webkit-scrollbar{
+    width: 4px;
+    height: 0px;
+    background: white;
+}
+.dataResults::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+.dataContent {
+    display: grid;
+    grid-template-columns: 56% 34% 5% 5%;
+    padding: 2% 0;
+    border-bottom: 1px solid #ccc;
+    padding-left: 1%;
+}
+.dataContent button {
+    color: white;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dataContent .modifyElement{
+    background-image: url("../img/save.png");
+}
+.dataContent .deleteElement{
+    background-image: url("../img/trashImg.png");
+}
+.dataContent .deleteElement , .dataContent .modifyElement{
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position:center ;
+    background-color: transparent;
+}
+.dataContent input {
+    width: 95%;
+    height: 100%;
+    border: none;
+    border-right: 1px solid #ccc;
+}
+
+.succesData{
+    border-right: 4px solid green;
+}
+.dangerData{
+    border-right: 4px solid red;
+}
+.noRegisters{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 29px;
+    color: #bdbdbd;
+    font-family: sans-serif;
+    cursor: default;
+}
+.contentResults{
+    display: none;
+    position: absolute;
+    width: 98%;
+    height: 75%;
+    background: white;
+    z-index: 1;
+    grid-template-columns: 49% 49%;
+    gap: 1%;
+}
