@@ -6,7 +6,7 @@ async function dayliSecurityCopyDb(destinationPath) {
 
     const pathDb = '\\\\SANDRA\\db\\db.db';
 
-    await pushToGitHub("C:\\Users\\Usuario\\Desktop\\electron\\2\\pruebba");
+    await pushToGitHub(path.resolve("C:\\Users\\Usuario\\Desktop\\electron\\2\\pruebba"));
 
     // obtiene el nombre del día en español (jueves)
     let newDate = new Date();
@@ -17,7 +17,7 @@ async function dayliSecurityCopyDb(destinationPath) {
     let day   = `${newDate.getFullYear()}${newDate.getMonth()+1}${newDate.getDate()}  - Copia del Día ${nameDay} `;
 
     // crea la carpeta 
-    fs.mkdirSync(destinationPath+day , {recursive :true});
+    fs.mkdirSync(path.resolve(__dirname,destinationPath)+day , {recursive :true});
 
     // copia la base de datos a la carpeta creada
     fs.copyFileSync(pathDb , destinationPath+day+"\\db.db" )
