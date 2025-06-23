@@ -6,21 +6,25 @@ async function dayliSecurityCopyDb(destinationPath) {
 
     const pathDb = '\\\\SANDRA\\db\\db.db';
 
-    await pushToGitHub(path.resolve("C:\\Users\\Usuario\\Desktop\\electron\\2\\pruebba"));
-
     // obtiene el nombre del día en español (jueves)
     let newDate = new Date();
     let nameDay = {weekday : "long"}
     nameDay = newDate.toLocaleString("es-ES" , nameDay);
 
     // crea el nombre de la carpeta
-    let day   = `${newDate.getFullYear()}${newDate.getMonth()+1}${newDate.getDate()}  - Copia del Día ${nameDay} `;
+    let day   = `${newDate.getFullYear()}${newDate.getMonth()+1}${newDate.getDate()}-Copia del Día ${nameDay} !!`;
 
     // crea la carpeta 
-    fs.mkdirSync(path.resolve(__dirname,destinationPath)+day , {recursive :true});
+    if(!fs.existsSync(destinationPath+day )){
+        fs.mkdirSync(destinationPath+day );
+    }
+    
 
     // copia la base de datos a la carpeta creada
-    fs.copyFileSync(pathDb , destinationPath+day+"\\db.db" )
+    fs.copyFile(pathDb , destinationPath+day+"\\db.db", err=>{
+        if(err) console.log(err);
+    }
+)
 
     // evalua cuantas copias hay en la carpeta 
     let readedFiles = fs.readdirSync(destinationPath , {withFileTypes:true});
@@ -36,6 +40,7 @@ async function dayliSecurityCopyDb(destinationPath) {
         console.log("se eliminaron los sobrantes")
     }
 
+    //await pushToGitHub(path.resolve("C:\\Users\\Usuario\\Desktop\\electron\\2\\pruebba"));
 }
 
 module.exports = {
