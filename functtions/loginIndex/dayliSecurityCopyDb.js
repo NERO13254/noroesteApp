@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const { pushToGitHub } = require("./pushToGitHub");
+const { pushToDrive } = require("./pushToDrive");
 
 async function dayliSecurityCopyDb(destinationPath) {
 
@@ -21,10 +21,7 @@ async function dayliSecurityCopyDb(destinationPath) {
     
 
     // copia la base de datos a la carpeta creada
-    fs.copyFile(pathDb , destinationPath+day+"\\db.db", err=>{
-        if(err) console.log(err);
-    }
-)
+    fs.copyFileSync(pathDb , destinationPath+day+"\\db.db")
 
     // evalua cuantas copias hay en la carpeta 
     let readedFiles = fs.readdirSync(destinationPath , {withFileTypes:true});
@@ -39,7 +36,7 @@ async function dayliSecurityCopyDb(destinationPath) {
         console.log("se eliminaron los sobrantes")
     }
 
-    await pushToGitHub(path.resolve("C:\\Users\\Usuario\\Desktop\\electron\\2\\pruebba"));
+    await pushToDrive();
 }
 
 module.exports = {
