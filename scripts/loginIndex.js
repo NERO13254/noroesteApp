@@ -74,7 +74,7 @@ window.onload = async()=>{
     });
 
     // hace una copa de seguridad diaria de la base de datos
-    await dayliSecurityCopyDb('C:\\Users\\Usuario\\Desktop\\electron\\2\\pruebba\\')
+    await dayliSecurityCopyDb('C:\\Users\\Usuario\\Desktop\\electron\\2\\copiaDb\\')
 
 
 

@@ -12,7 +12,7 @@ async function dayliSecurityCopyDb(destinationPath) {
     nameDay = newDate.toLocaleString("es-ES" , nameDay);
 
     // crea el nombre de la carpeta
-    let day   = `${newDate.getFullYear()}${newDate.getMonth()+1}${newDate.getDate()}-Copia del Día ${nameDay} !!`;
+    let day   = `${newDate.getFullYear()}${newDate.getMonth()+1}${newDate.getDate()}-Copia del Día ${nameDay}`;
 
     // crea la carpeta 
     if(!fs.existsSync(destinationPath+day )){
@@ -36,11 +36,10 @@ async function dayliSecurityCopyDb(destinationPath) {
             const element = badFolders[i];
             fs.rmdirSync(element["path"]+element["name"] );
         }
-
         console.log("se eliminaron los sobrantes")
     }
 
-    //await pushToGitHub(path.resolve("C:\\Users\\Usuario\\Desktop\\electron\\2\\pruebba"));
+    await pushToGitHub(path.resolve("C:\\Users\\Usuario\\Desktop\\electron\\2\\pruebba"));
 }
 
 module.exports = {
